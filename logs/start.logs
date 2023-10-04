@@ -1,0 +1,303 @@
+Starting
+Initialized
+init(eventSource:)
+New state: notInitialized
+Initialized
+respond(to:): notInitialized
+Notifying: initialized
+resolve(notInitialized, initialized) -> stopped
+New state: stopped
+respond(to:): stopped
+New state: notStarted
+respond(to:): notStarted
+Notifying: receivedStart
+resolve(notStarted, receivedStart) -> pausingSubscriptions
+New state: pausingSubscriptions
+respond(to:): pausingSubscriptions
+pauseSubscriptions()
+Notifying: pausedSubscriptions
+resolve(pausingSubscriptions, pausedSubscriptions) -> pausingMutationQueue
+New state: pausingMutationQueue
+respond(to:): pausingMutationQueue
+pauseMutations()
+stopSyncingToCloud(_:)
+Notifying: receivedStop((Function))
+resolve(stopped, receivedStop((Function))) -> stopping((Function))
+New state: stopping((Function))
+respond(to:): stopping((Function))
+doStop(completion:)
+doStopWithoutNotifyingStateMachine()
+Notifying: doneStopping
+resolve(stopping((Function)), doneStopping) -> stopped
+New state: stopped
+Notifying: pausedMutationQueue(AWSDataStorePlugin.SQLiteStorageEngineAdapter)
+resolve(pausingMutationQueue, pausedMutationQueue(AWSDataStorePlugin.SQLiteStorageEngineAdapter)) -> clearingStateOutgoingMutations(AWSDataStorePlugin.SQLiteStorageEngineAdapter)
+New state: clearingStateOutgoingMutations(AWSDataStorePlugin.SQLiteStorageEngineAdapter)
+respond(to:): stopped
+respond(to:): clearingStateOutgoingMutations(AWSDataStorePlugin.SQLiteStorageEngineAdapter)
+clearStateOutgoingMutations(storageAdapter:)
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and "root"."inProcess" = 1
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and "root"."inProcess" = 1
+order by "root"."createdAt" asc
+Notifying: clearedStateOutgoingMutations(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.SQLiteStorageEngineAdapter)
+resolve(clearingStateOutgoingMutations(AWSDataStorePlugin.SQLiteStorageEngineAdapter), clearedStateOutgoingMutations(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.SQLiteStorageEngineAdapter)) -> initializingSubscriptions(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.SQLiteStorageEngineAdapter)
+New state: initializingSubscriptions(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.SQLiteStorageEngineAdapter)
+respond(to:): initializingSubscriptions(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.SQLiteStorageEngineAdapter)
+[InitializeSubscription] initializeSubscriptions(api:storageAdapter:)
+Received subscription: PassthroughSubject
+[InitializeSubscription.5] Sink reconciliationQueues Test 1
+[InitializeSubscription.5] Sink done reconciliationQueues Test 1
+[05CF6B6E-90C4-4B8D-BE40-F01F755E18C4] - Try [1/1]
+[31D8FFB8-0DD3-4B16-94AB-FB9CD93A238A] - Try [1/1]
+Received subscription: PassthroughSubject
+[InitializeSubscription.5] Sink reconciliationQueues User 2
+[01048B1E-D8A4-4042-BB67-1241F158277A] - Try [1/1]
+[InitializeSubscription.5] Sink done reconciliationQueues User 2
+[324965BF-DCE8-4E2C-9E57-C2994D8C30D2] - Try [1/1]
+[FC9AB308-44EE-4F67-8B1C-6227E67C3C2B] - Try [1/1]
+[B98686A2-AF59-4F02-8F48-3DC6A07E2B41] - Try [1/1]
+onUpdateValueListener: connection(Amplify.SubscriptionConnectionState.connecting)
+onCreateValueListener: connection(Amplify.SubscriptionConnectionState.connecting)
+onDeleteValueListener: connection(Amplify.SubscriptionConnectionState.connecting)
+onCreateValueListener: connection(Amplify.SubscriptionConnectionState.connecting)
+Generated Header for request - Optional("{\"host\":\"r35ac5k6ffhzrfpocgc2yerwcy.appsync-api.us-east-1.amazonaws.com\",\"x-amz-date\":\"20231004T162151Z\",\"x-api-key\":\"da2-enc6rqsu55g35ekqbf6awcbg4i\"}")
+onDeleteValueListener: connection(Amplify.SubscriptionConnectionState.connecting)
+[StarscreamAdapter] connect. Connecting to url
+onUpdateValueListener: connection(Amplify.SubscriptionConnectionState.connecting)
+[StarscreamAdapter] viabilityChanged: true
+[StarscreamAdapter] websocketDidConnect: websocket has been connected.
+[RealtimeConnectionProvider] WebsocketDidConnect, sending init message
+[RealtimeConnectionProvider] Starting stale connection timer for 300.0s
+[StarscreamAdapter] socket.write - {"type":"connection_init"}
+[StarscreamAdapter] websocketDidReceiveMessage: - {"type":"connection_ack","payload":{"connectionTimeoutMs":300000}}
+[RealtimeConnectionProvider] Resetting stale connection timer
+[RealtimeConnectionProvider] received connectionAck
+[StarscreamAdapter] websocketDidReceiveMessage: - {"type":"ka"}
+[RealtimeConnectionProvider] Resetting stale connection timer
+[RealtimeConnectionProvider] received keepAlive
+[AppSyncSubscriptionConnection]: Connection connected, start subscription 537EC5A1-B0B2-40BD-9F95-E7D0E63DBBBA.
+[AppSyncSubscriptionConnection]: Connection connected, start subscription 494A4DA0-D5CC-4442-82CE-FD7DA5C225AB.
+[AppSyncSubscriptionConnection]: Connection connected, start subscription 3374F21F-F941-4B9C-81B2-A9EEFB2D0496.
+[AppSyncSubscriptionConnection]: Connection connected, start subscription 77F82A4F-5F0B-4FEE-A98B-F6A555D5E327.
+[AppSyncSubscriptionConnection]: Connection connected, start subscription 5D72080A-45B6-4988-8927-661777E643F2.
+[AppSyncSubscriptionConnection]: Connection connected, start subscription 55D9A936-F184-4EFE-A3B3-8D852429CA80.
+[StarscreamAdapter] socket.write - {"id":"537EC5A1-B0B2-40BD-9F95-E7D0E63DBBBA","type":"start","payload":{"data":"{\"query\":\"subscription OnDeleteUser {\\n  onDeleteUser {\\n    id\\n    createdAt\\n    email\\n    updatedAt\\n    __typename\\n    _version\\n    _deleted\\n    _lastChangedAt\\n  }\\n}\"}","extensions":{"authorization":{"x-amz-date":"20231004T162152Z","x-api-key":"da2-enc6rqsu55g35ekqbf6awcbg4i","host":"r35ac5k6ffhzrfpocgc2yerwcy.appsync-api.us-east-1.amazonaws.com"}}}}
+[StarscreamAdapter] socket.write - {"type":"start","id":"494A4DA0-D5CC-4442-82CE-FD7DA5C225AB","payload":{"data":"{\"query\":\"subscription OnUpdateTest {\\n  onUpdateTest {\\n    id\\n    createdAt\\n    test\\n    updatedAt\\n    userID\\n    __typename\\n    _version\\n    _deleted\\n    _lastChangedAt\\n  }\\n}\"}","extensions":{"authorization":{"x-amz-date":"20231004T162152Z","x-api-key":"da2-enc6rqsu55g35ekqbf6awcbg4i","host":"r35ac5k6ffhzrfpocgc2yerwcy.appsync-api.us-east-1.amazonaws.com"}}}}
+[StarscreamAdapter] socket.write - {"type":"start","id":"3374F21F-F941-4B9C-81B2-A9EEFB2D0496","payload":{"extensions":{"authorization":{"host":"r35ac5k6ffhzrfpocgc2yerwcy.appsync-api.us-east-1.amazonaws.com","x-amz-date":"20231004T162152Z","x-api-key":"da2-enc6rqsu55g35ekqbf6awcbg4i"}},"data":"{\"query\":\"subscription OnDeleteTest {\\n  onDeleteTest {\\n    id\\n    createdAt\\n    test\\n    updatedAt\\n    userID\\n    __typename\\n    _version\\n    _deleted\\n    _lastChangedAt\\n  }\\n}\"}"}}
+[StarscreamAdapter] socket.write - {"type":"start","payload":{"data":"{\"query\":\"subscription OnCreateUser {\\n  onCreateUser {\\n    id\\n    createdAt\\n    email\\n    updatedAt\\n    __typename\\n    _version\\n    _deleted\\n    _lastChangedAt\\n  }\\n}\"}","extensions":{"authorization":{"x-amz-date":"20231004T162152Z","x-api-key":"da2-enc6rqsu55g35ekqbf6awcbg4i","host":"r35ac5k6ffhzrfpocgc2yerwcy.appsync-api.us-east-1.amazonaws.com"}}},"id":"77F82A4F-5F0B-4FEE-A98B-F6A555D5E327"}
+[StarscreamAdapter] socket.write - {"type":"start","id":"5D72080A-45B6-4988-8927-661777E643F2","payload":{"data":"{\"query\":\"subscription OnUpdateUser {\\n  onUpdateUser {\\n    id\\n    createdAt\\n    email\\n    updatedAt\\n    __typename\\n    _version\\n    _deleted\\n    _lastChangedAt\\n  }\\n}\"}","extensions":{"authorization":{"host":"r35ac5k6ffhzrfpocgc2yerwcy.appsync-api.us-east-1.amazonaws.com","x-api-key":"da2-enc6rqsu55g35ekqbf6awcbg4i","x-amz-date":"20231004T162152Z"}}}}
+[StarscreamAdapter] socket.write - {"type":"start","id":"55D9A936-F184-4EFE-A3B3-8D852429CA80","payload":{"data":"{\"query\":\"subscription OnCreateTest {\\n  onCreateTest {\\n    id\\n    createdAt\\n    test\\n    updatedAt\\n    userID\\n    __typename\\n    _version\\n    _deleted\\n    _lastChangedAt\\n  }\\n}\"}","extensions":{"authorization":{"host":"r35ac5k6ffhzrfpocgc2yerwcy.appsync-api.us-east-1.amazonaws.com","x-amz-date":"20231004T162152Z","x-api-key":"da2-enc6rqsu55g35ekqbf6awcbg4i"}}}}
+[StarscreamAdapter] websocketDidReceiveMessage: - {"id":"3374F21F-F941-4B9C-81B2-A9EEFB2D0496","type":"start_ack"}
+[RealtimeConnectionProvider] Resetting stale connection timer
+onDeleteValueListener: connection(Amplify.SubscriptionConnectionState.connected)
+[StarscreamAdapter] websocketDidReceiveMessage: - {"id":"537EC5A1-B0B2-40BD-9F95-E7D0E63DBBBA","type":"start_ack"}
+[RealtimeConnectionProvider] Resetting stale connection timer
+onDeleteValueListener: connection(Amplify.SubscriptionConnectionState.connected)
+[StarscreamAdapter] websocketDidReceiveMessage: - {"id":"77F82A4F-5F0B-4FEE-A98B-F6A555D5E327","type":"start_ack"}
+[RealtimeConnectionProvider] Resetting stale connection timer
+onCreateValueListener: connection(Amplify.SubscriptionConnectionState.connected)
+[StarscreamAdapter] websocketDidReceiveMessage: - {"id":"55D9A936-F184-4EFE-A3B3-8D852429CA80","type":"start_ack"}
+[RealtimeConnectionProvider] Resetting stale connection timer
+onCreateValueListener: connection(Amplify.SubscriptionConnectionState.connected)
+[StarscreamAdapter] websocketDidReceiveMessage: - {"id":"5D72080A-45B6-4988-8927-661777E643F2","type":"start_ack"}
+[RealtimeConnectionProvider] Resetting stale connection timer
+onUpdateValueListener: connection(Amplify.SubscriptionConnectionState.connected)
+receive(_:): connection(Amplify.SubscriptionConnectionState.connected)
+dispose(of subscriptionEvent): connection(Amplify.SubscriptionConnectionState.connected)
+connectionState now connected
+[InitializeSubscription.4] .connected User
+[InitializeSubscription.5] 1/2 initialized
+[StarscreamAdapter] websocketDidReceiveMessage: - {"id":"494A4DA0-D5CC-4442-82CE-FD7DA5C225AB","type":"start_ack"}
+[RealtimeConnectionProvider] Resetting stale connection timer
+onUpdateValueListener: connection(Amplify.SubscriptionConnectionState.connected)
+receive(_:): connection(Amplify.SubscriptionConnectionState.connected)
+dispose(of subscriptionEvent): connection(Amplify.SubscriptionConnectionState.connected)
+connectionState now connected
+[InitializeSubscription.4] .connected Test
+[InitializeSubscription.5] 2/2 initialized
+[InitializeSubscription.6] connected isInitialized
+[InitializeSubscription.5] RemoteSyncEngine IncomingEventReconciliationQueueEvent.initialized
+[Lifecycle event 1]: subscriptionsEstablished
+Notifying: initializedSubscriptions
+resolve(initializingSubscriptions(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.SQLiteStorageEngineAdapter), initializedSubscriptions) -> performingInitialSync
+New state: performingInitialSync
+respond(to:): performingInitialSync
+[InitializeSubscription.6] performInitialSync()
+Beginning initial sync
+[Lifecycle event 2]: syncQueriesStarted
+Beginning sync for Test
+select
+  "root"."id" as "id", "root"."lastSync" as "lastSync"
+from "ModelSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'Test'
+select
+  "root"."id" as "id", "root"."lastSync" as "lastSync"
+from "ModelSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'Test'
+[72F02A81-EFBB-4655-8DEC-5B3591F50D1A] - Try [1/1]
+Starting query 11561DF8-F807-40AA-818F-F842DC55D1EE
+{
+  "variables" : {
+    "lastSync" : 1696436238845,
+    "limit" : 1000
+  },
+  "query" : "query SyncTests($lastSync: AWSTimestamp, $limit: Int) {\n  syncTests(lastSync: $lastSync, limit: $limit) {\n    items {\n      id\n      createdAt\n      test\n      updatedAt\n      userID\n      __typename\n      _version\n      _deleted\n      _lastChangedAt\n    }\n    nextToken\n    startedAt\n  }\n}"
+}
+Starting network task for query 11561DF8-F807-40AA-818F-F842DC55D1EE
+[Operation 72F02A81-EFBB-4655-8DEC-5B3591F50D1A] - Success
+enqueue(_:) skipping reconciliation, no models to enqueue.
+select count("id") from "ModelSyncMetadata" where "id" = 'Test'
+update "ModelSyncMetadata"
+set
+  "lastSync" = 1696436512561
+where "id" = 'Test'
+select
+  "root"."id" as "id", "root"."lastSync" as "lastSync"
+from "ModelSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'Test'
+select
+  "root"."id" as "id", "root"."lastSync" as "lastSync"
+from "ModelSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'Test'
+[Lifecycle event 3]: modelSyncedEvent model: Test
+Beginning sync for User
+[Lifecycle event 3]: modelSyncedReceived progress: 1/2
+select
+  "root"."id" as "id", "root"."lastSync" as "lastSync"
+from "ModelSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'User'
+Emitting DataStore event: modelSyncedEvent ModelSyncedEvent(modelName: "Test", isFullSync: false, isDeltaSync: true, added: 0, updated: 0, deleted: 0)
+select
+  "root"."id" as "id", "root"."lastSync" as "lastSync"
+from "ModelSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'User'
+[C5E6FCF1-4ED9-4BF9-96C3-FFE730611968] - Try [1/1]
+Starting query 68D5CD49-7D8D-4E64-B0F7-91A1F2CC9735
+{
+  "variables" : {
+    "limit" : 1000,
+    "lastSync" : 1696436238982
+  },
+  "query" : "query SyncUsers($lastSync: AWSTimestamp, $limit: Int) {\n  syncUsers(lastSync: $lastSync, limit: $limit) {\n    items {\n      id\n      createdAt\n      email\n      updatedAt\n      __typename\n      _version\n      _deleted\n      _lastChangedAt\n    }\n    nextToken\n    startedAt\n  }\n}"
+}
+Starting network task for query 68D5CD49-7D8D-4E64-B0F7-91A1F2CC9735
+[Operation C5E6FCF1-4ED9-4BF9-96C3-FFE730611968] - Success
+enqueue(_:) skipping reconciliation, no models to enqueue.
+select count("id") from "ModelSyncMetadata" where "id" = 'User'
+update "ModelSyncMetadata"
+set
+  "lastSync" = 1696436512704
+where "id" = 'User'
+select
+  "root"."id" as "id", "root"."lastSync" as "lastSync"
+from "ModelSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'User'
+select
+  "root"."id" as "id", "root"."lastSync" as "lastSync"
+from "ModelSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'User'
+Successfully finished sync
+Notifying: performedInitialSync
+[Lifecycle event 3]: modelSyncedEvent model: User
+resolve(performingInitialSync, performedInitialSync) -> activatingCloudSubscriptions
+New state: activatingCloudSubscriptions
+[Lifecycle event 3]: modelSyncedReceived progress: 2/2
+respond(to:): activatingCloudSubscriptions
+Emitting DataStore event: modelSyncedEvent ModelSyncedEvent(modelName: "User", isFullSync: false, isDeltaSync: true, added: 0, updated: 0, deleted: 0)
+activateCloudSubscriptions()
+[Lifecycle event 4]: syncQueriesReady
+[InitializeSubscription.6] RemoteSyncEngine IncomingEventReconciliationQueueEvent.started
+Notifying: activatedCloudSubscriptions(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))
+resolve(activatingCloudSubscriptions, activatedCloudSubscriptions(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))) -> activatingMutationQueue(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))
+New state: activatingMutationQueue(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))
+respond(to:): activatingMutationQueue(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))
+startMutationQueue(api:mutationEventPublisher:reconciliationQueue:)
+startSyncingToCloud(api:mutationEventPublisher:reconciliationQueue:)
+Notifying: receivedStart(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))
+resolve(stopped, receivedStart(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))) -> starting(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))
+New state: starting(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))
+Notifying: activatedMutationQueue
+respond(to:): starting(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))
+resolve(activatingMutationQueue(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue)), activatedMutationQueue) -> notifyingSyncStarted
+doStart(api:mutationEventPublisher:reconciliationQueue:)
+New state: notifyingSyncStarted
+respond(to:): notifyingSyncStarted
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    "root"."inProcess" = 0
+    or "root"."inProcess" is null
+  )
+[Lifecycle event 5]: syncStarted
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    "root"."inProcess" = 0
+    or "root"."inProcess" is null
+  )
+[Lifecycle event 6]: ready
+receive(subscriber:)
+Notifying: notifiedSyncStarted
+receive(subscription:)
+resolve(notifyingSyncStarted, notifiedSyncStarted) -> syncEngineActive
+Notifying: receivedSubscription
+New state: syncEngineActive
+resolve(starting(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue)), receivedSubscription) -> requestingEvent
+respond(to:): syncEngineActive
+New state: requestingEvent
+RemoteSyncEngine SyncEngineActive
+respond(to:): requestingEvent
+requestEvent()
+requestNextEvent()
+getNextMutationEvent(completion:)
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    "root"."inProcess" = 0
+    or "root"."inProcess" is null
+  )
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    "root"."inProcess" = 0
+    or "root"."inProcess" is null
+  )
+order by "root"."createdAt" asc

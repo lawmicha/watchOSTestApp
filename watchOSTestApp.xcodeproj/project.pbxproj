@@ -15,6 +15,17 @@
 		21511CCD2ACDBCF500AA042E /* watchOSTestApp_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CCC2ACDBCF500AA042E /* watchOSTestApp_Watch_AppTests.swift */; };
 		21511CD72ACDBCF500AA042E /* watchOSTestApp_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CD62ACDBCF500AA042E /* watchOSTestApp_Watch_AppUITests.swift */; };
 		21511CD92ACDBCF500AA042E /* watchOSTestApp_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CD82ACDBCF500AA042E /* watchOSTestApp_Watch_AppUITestsLaunchTests.swift */; };
+		21511CEB2ACDC01E00AA042E /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 21511CEA2ACDC01E00AA042E /* AWSAPIPlugin */; };
+		21511CED2ACDC01E00AA042E /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 21511CEC2ACDC01E00AA042E /* AWSCognitoAuthPlugin */; };
+		21511CEF2ACDC01E00AA042E /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 21511CEE2ACDC01E00AA042E /* AWSDataStorePlugin */; };
+		21511CF12ACDC01E00AA042E /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 21511CF02ACDC01E00AA042E /* Amplify */; };
+		21511CFA2ACDC1CC00AA042E /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CF52ACDC1CB00AA042E /* User+Schema.swift */; };
+		21511CFB2ACDC1CC00AA042E /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CF62ACDC1CC00AA042E /* AmplifyModels.swift */; };
+		21511CFC2ACDC1CC00AA042E /* Test+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CF72ACDC1CC00AA042E /* Test+Schema.swift */; };
+		21511CFD2ACDC1CC00AA042E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CF82ACDC1CC00AA042E /* User.swift */; };
+		21511CFE2ACDC1CC00AA042E /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CF92ACDC1CC00AA042E /* Test.swift */; };
+		21511D012ACDC21A00AA042E /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 21511D002ACDC21A00AA042E /* amplifyconfiguration.json */; };
+		21511D022ACDC21A00AA042E /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 21511D002ACDC21A00AA042E /* amplifyconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +78,12 @@
 		21511CD22ACDBCF500AA042E /* watchOSTestApp Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "watchOSTestApp Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21511CD62ACDBCF500AA042E /* watchOSTestApp_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchOSTestApp_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		21511CD82ACDBCF500AA042E /* watchOSTestApp_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchOSTestApp_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		21511CF52ACDC1CB00AA042E /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
+		21511CF62ACDC1CC00AA042E /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
+		21511CF72ACDC1CC00AA042E /* Test+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Test+Schema.swift"; sourceTree = "<group>"; };
+		21511CF82ACDC1CC00AA042E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		21511CF92ACDC1CC00AA042E /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		21511D002ACDC21A00AA042E /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +91,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21511CEF2ACDC01E00AA042E /* AWSDataStorePlugin in Frameworks */,
+				21511CF12ACDC01E00AA042E /* Amplify in Frameworks */,
+				21511CEB2ACDC01E00AA042E /* AWSAPIPlugin in Frameworks */,
+				21511CED2ACDC01E00AA042E /* AWSCognitoAuthPlugin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +118,7 @@
 		21511CA92ACDBCF200AA042E = {
 			isa = PBXGroup;
 			children = (
+				21511D002ACDC21A00AA042E /* amplifyconfiguration.json */,
 				21511CBA2ACDBCF300AA042E /* watchOSTestApp Watch App */,
 				21511CCB2ACDBCF500AA042E /* watchOSTestApp Watch AppTests */,
 				21511CD52ACDBCF500AA042E /* watchOSTestApp Watch AppUITests */,
@@ -118,6 +140,7 @@
 		21511CBA2ACDBCF300AA042E /* watchOSTestApp Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				21511CFF2ACDC1DB00AA042E /* Models */,
 				21511CBB2ACDBCF300AA042E /* watchOSTestAppApp.swift */,
 				21511CBD2ACDBCF300AA042E /* ContentView.swift */,
 				21511CBF2ACDBCF500AA042E /* Assets.xcassets */,
@@ -149,6 +172,18 @@
 				21511CD82ACDBCF500AA042E /* watchOSTestApp_Watch_AppUITestsLaunchTests.swift */,
 			);
 			path = "watchOSTestApp Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		21511CFF2ACDC1DB00AA042E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				21511CF62ACDC1CC00AA042E /* AmplifyModels.swift */,
+				21511CF92ACDC1CC00AA042E /* Test.swift */,
+				21511CF72ACDC1CC00AA042E /* Test+Schema.swift */,
+				21511CF82ACDC1CC00AA042E /* User.swift */,
+				21511CF52ACDC1CB00AA042E /* User+Schema.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +219,12 @@
 			dependencies = (
 			);
 			name = "watchOSTestApp Watch App";
+			packageProductDependencies = (
+				21511CEA2ACDC01E00AA042E /* AWSAPIPlugin */,
+				21511CEC2ACDC01E00AA042E /* AWSCognitoAuthPlugin */,
+				21511CEE2ACDC01E00AA042E /* AWSDataStorePlugin */,
+				21511CF02ACDC01E00AA042E /* Amplify */,
+			);
 			productName = "watchOSTestApp Watch App";
 			productReference = 21511CB62ACDBCF300AA042E /* watchOSTestApp Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -259,6 +300,9 @@
 				Base,
 			);
 			mainGroup = 21511CA92ACDBCF200AA042E;
+			packageReferences = (
+				21511CE92ACDC01E00AA042E /* XCRemoteSwiftPackageReference "amplify-swift" */,
+			);
 			productRefGroup = 21511CB12ACDBCF300AA042E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -276,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21511D012ACDC21A00AA042E /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21511CC32ACDBCF500AA042E /* Preview Assets.xcassets in Resources */,
+				21511D022ACDC21A00AA042E /* amplifyconfiguration.json in Resources */,
 				21511CC02ACDBCF500AA042E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,7 +355,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21511CFB2ACDC1CC00AA042E /* AmplifyModels.swift in Sources */,
 				21511CBE2ACDBCF300AA042E /* ContentView.swift in Sources */,
+				21511CFD2ACDC1CC00AA042E /* User.swift in Sources */,
+				21511CFE2ACDC1CC00AA042E /* Test.swift in Sources */,
+				21511CFC2ACDC1CC00AA042E /* Test+Schema.swift in Sources */,
+				21511CFA2ACDC1CC00AA042E /* User+Schema.swift in Sources */,
 				21511CBC2ACDBCF300AA042E /* watchOSTestAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -685,6 +736,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		21511CE92ACDC01E00AA042E /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift.git";
+			requirement = {
+				branch = "fix-watchos";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		21511CEA2ACDC01E00AA042E /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21511CE92ACDC01E00AA042E /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
+		21511CEC2ACDC01E00AA042E /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21511CE92ACDC01E00AA042E /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		21511CEE2ACDC01E00AA042E /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21511CE92ACDC01E00AA042E /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSDataStorePlugin;
+		};
+		21511CF02ACDC01E00AA042E /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21511CE92ACDC01E00AA042E /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 21511CAA2ACDBCF200AA042E /* Project object */;
 }

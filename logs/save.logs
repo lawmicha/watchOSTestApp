@@ -1,0 +1,1225 @@
+Saving
+Saving: User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: nil, updatedAt: nil) with condition: nil
+Initialized
+init(eventSource:)
+New state: notInitialized
+Initialized
+Notifying: initialized
+resolve(notInitialized, initialized) -> stopped
+New state: stopped
+respond(to:): notInitialized
+New state: notStarted
+respond(to:): stopped
+respond(to:): notStarted
+Notifying: receivedStart
+resolve(notStarted, receivedStart) -> pausingSubscriptions
+New state: pausingSubscriptions
+respond(to:): pausingSubscriptions
+pauseSubscriptions()
+Notifying: pausedSubscriptions
+resolve(pausingSubscriptions, pausedSubscriptions) -> pausingMutationQueue
+New state: pausingMutationQueue
+select count("id") from "User" where "id" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+respond(to:): pausingMutationQueue
+pauseMutations()
+stopSyncingToCloud(_:)
+Notifying: receivedStop((Function))
+resolve(stopped, receivedStop((Function))) -> stopping((Function))
+New state: stopping((Function))
+respond(to:): stopping((Function))
+doStop(completion:)
+doStopWithoutNotifyingStateMachine()
+Notifying: doneStopping
+select count("id") from "User" where "id" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+resolve(stopping((Function)), doneStopping) -> stopped
+New state: stopped
+Notifying: pausedMutationQueue(AWSDataStorePlugin.SQLiteStorageEngineAdapter)
+select count("id") from "User" where "id" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+resolve(pausingMutationQueue, pausedMutationQueue(AWSDataStorePlugin.SQLiteStorageEngineAdapter)) -> clearingStateOutgoingMutations(AWSDataStorePlugin.SQLiteStorageEngineAdapter)
+New state: clearingStateOutgoingMutations(AWSDataStorePlugin.SQLiteStorageEngineAdapter)
+respond(to:): stopped
+insert into "User" ("id", "createdAt", "email", "updatedAt")
+values ('37B7F985-31B2-49E4-B21C-0DA27C7544CB', NULL, NULL, NULL)
+respond(to:): clearingStateOutgoingMutations(AWSDataStorePlugin.SQLiteStorageEngineAdapter)
+clearStateOutgoingMutations(storageAdapter:)
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and "root"."inProcess" = 1
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and "root"."inProcess" = 1
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."email" as "email",
+  "root"."updatedAt" as "updatedAt"
+from "User" as "root"
+where 1 = 1
+  and "root"."id" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+Notifying: clearedStateOutgoingMutations(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.SQLiteStorageEngineAdapter)
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."email" as "email",
+  "root"."updatedAt" as "updatedAt"
+from "User" as "root"
+where 1 = 1
+  and "root"."id" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+resolve(clearingStateOutgoingMutations(AWSDataStorePlugin.SQLiteStorageEngineAdapter), clearedStateOutgoingMutations(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.SQLiteStorageEngineAdapter)) -> initializingSubscriptions(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.SQLiteStorageEngineAdapter)
+New state: initializingSubscriptions(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.SQLiteStorageEngineAdapter)
+respond(to:): initializingSubscriptions(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.SQLiteStorageEngineAdapter)
+[InitializeSubscription] initializeSubscriptions(api:storageAdapter:)
+Received subscription: PassthroughSubject
+[InitializeSubscription.5] Sink reconciliationQueues Test 1
+[InitializeSubscription.5] Sink done reconciliationQueues Test 1
+[D9297721-60AE-48A4-B10E-4A02C662549E] - Try [1/1]
+Received subscription: PassthroughSubject
+[InitializeSubscription.5] Sink reconciliationQueues User 2
+[InitializeSubscription.5] Sink done reconciliationQueues User 2
+[FE25987A-BDD2-4676-B745-44EE7D37240D] - Try [1/1]
+[6F2D8D61-B443-48C4-AFFF-C7186F96F915] - Try [1/1]
+[E48E483D-ECCE-4341-B980-E06A4498AC9C] - Try [1/1]
+[50885DEB-3444-4559-A778-A44B1891FA34] - Try [1/1]
+[899CFAC7-894B-47F8-A3CB-68082BCC9D66] - Try [1/1]
+save(_:modelSchema:condition:eagerLoad:completion:) syncing mutation for User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: nil, updatedAt: nil)
+onCreateValueListener: connection(Amplify.SubscriptionConnectionState.connecting)
+Generated Header for request - Optional("{\"x-api-key\":\"da2-enc6rqsu55g35ekqbf6awcbg4i\",\"host\":\"r35ac5k6ffhzrfpocgc2yerwcy.appsync-api.us-east-1.amazonaws.com\",\"x-amz-date\":\"20231004T162225Z\"}")
+onUpdateValueListener: connection(Amplify.SubscriptionConnectionState.connecting)
+onCreateValueListener: connection(Amplify.SubscriptionConnectionState.connecting)
+[StarscreamAdapter] connect. Connecting to url
+onDeleteValueListener: connection(Amplify.SubscriptionConnectionState.connecting)
+onUpdateValueListener: connection(Amplify.SubscriptionConnectionState.connecting)
+onDeleteValueListener: connection(Amplify.SubscriptionConnectionState.connecting)
+submit(mutationEvent:completion:): MutationEvent(id: "83304FCA-D53D-423B-8F09-1FD847AAB1EB", modelId: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", modelName: "User", json: "{\"id\":\"37B7F985-31B2-49E4-B21C-0DA27C7544CB\",\"tests\":{\"dataStoreAssociatedFields\":[\"userID\"],\"dataStoreAssociatedIdentifiers\":[\"37B7F985-31B2-49E4-B21C-0DA27C7544CB\"]}}", mutationType: "create", createdAt: Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:25 +0000), version: nil, inProcess: false, graphQLFilterJSON: nil)
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and (
+    "root"."id" = 'User|37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+  )
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and (
+    "root"."id" = 'User|37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+  )
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    (
+      (
+        "root"."modelId" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+        and "root"."modelName" = 'User'
+      )
+    )
+    and (
+      "root"."inProcess" = 0
+      or "root"."inProcess" is null
+    )
+  )
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    (
+      (
+        "root"."modelId" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+        and "root"."modelName" = 'User'
+      )
+    )
+    and (
+      "root"."inProcess" = 0
+      or "root"."inProcess" is null
+    )
+  )
+order by "root"."createdAt" asc
+disposition(for:given:) no local events, saving candidate
+resolve(candidate:localEvents:per:storageAdapter:completionPromise:) disposition saveCandidate
+save(mutationEvent:storageAdapter:completionPromise:) mutationEvent: MutationEvent(id: "83304FCA-D53D-423B-8F09-1FD847AAB1EB", modelId: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", modelName: "User", json: "{\"id\":\"37B7F985-31B2-49E4-B21C-0DA27C7544CB\",\"tests\":{\"dataStoreAssociatedFields\":[\"userID\"],\"dataStoreAssociatedIdentifiers\":[\"37B7F985-31B2-49E4-B21C-0DA27C7544CB\"]}}", mutationType: "create", createdAt: Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:25 +0000), version: nil, inProcess: false, graphQLFilterJSON: nil)
+select count("id") from "MutationEvent" where "id" = '83304FCA-D53D-423B-8F09-1FD847AAB1EB'
+insert into "MutationEvent" ("id", "createdAt", "graphQLFilterJSON", "inProcess", "json", "modelId", "modelName", "mutationType", "version")
+values ('83304FCA-D53D-423B-8F09-1FD847AAB1EB', '2023-10-04T16:22:25.451Z', NULL, 0, '{"id":"37B7F985-31B2-49E4-B21C-0DA27C7544CB","tests":{"dataStoreAssociatedFields":["userID"],"dataStoreAssociatedIdentifiers":["37B7F985-31B2-49E4-B21C-0DA27C7544CB"]}}', '37B7F985-31B2-49E4-B21C-0DA27C7544CB', 'User', 'create', NULL)
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and "root"."id" = '83304FCA-D53D-423B-8F09-1FD847AAB1EB'
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and "root"."id" = '83304FCA-D53D-423B-8F09-1FD847AAB1EB'
+save(mutationEvent:storageAdapter:completionPromise:): saved MutationEvent(id: "83304FCA-D53D-423B-8F09-1FD847AAB1EB", modelId: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", modelName: "User", json: "{\"id\":\"37B7F985-31B2-49E4-B21C-0DA27C7544CB\",\"tests\":{\"dataStoreAssociatedFields\":[\"userID\"],\"dataStoreAssociatedIdentifiers\":[\"37B7F985-31B2-49E4-B21C-0DA27C7544CB\"]}}", mutationType: "create", createdAt: Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:25 +0000), version: nil, inProcess: false, graphQLFilterJSON: nil)
+save(mutationEvent:storageAdapter:completionPromise:): invoking completionPromise with success(Amplify.MutationEvent(id: "83304FCA-D53D-423B-8F09-1FD847AAB1EB", modelId: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", modelName: "User", json: "{\"id\":\"37B7F985-31B2-49E4-B21C-0DA27C7544CB\",\"tests\":{\"dataStoreAssociatedFields\":[\"userID\"],\"dataStoreAssociatedIdentifiers\":[\"37B7F985-31B2-49E4-B21C-0DA27C7544CB\"]}}", mutationType: "create", createdAt: Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:25 +0000), version: nil, inProcess: false, graphQLFilterJSON: nil))
+syncMutation(of:modelSchema:mutationType:predicate:syncEngine:completion:) successfully submitted User to sync engine MutationEvent(id: "83304FCA-D53D-423B-8F09-1FD847AAB1EB", modelId: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", modelName: "User", json: "{\"id\":\"37B7F985-31B2-49E4-B21C-0DA27C7544CB\",\"tests\":{\"dataStoreAssociatedFields\":[\"userID\"],\"dataStoreAssociatedIdentifiers\":[\"37B7F985-31B2-49E4-B21C-0DA27C7544CB\"]}}", mutationType: "create", createdAt: Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:25 +0000), version: nil, inProcess: false, graphQLFilterJSON: nil)
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'User|37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+limit 1 offset 0
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'User|37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+limit 1 offset 0
+Saving: Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: nil, updatedAt: nil) with condition: nil
+select count("id") from "Test" where "id" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475'
+select count("id") from "Test" where "id" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475'
+select count("id") from "Test" where "id" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475'
+insert into "Test" ("id", "createdAt", "test", "updatedAt", "userID")
+values ('A0347AB7-7085-445E-9AEC-9E3152A7B475', NULL, NULL, NULL, '37B7F985-31B2-49E4-B21C-0DA27C7544CB')
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."test" as "test",
+  "root"."updatedAt" as "updatedAt", "root"."userID" as "userID"
+from "Test" as "root"
+where 1 = 1
+  and "root"."id" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475'
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."test" as "test",
+  "root"."updatedAt" as "updatedAt", "root"."userID" as "userID"
+from "Test" as "root"
+where 1 = 1
+  and "root"."id" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475'
+save(_:modelSchema:condition:eagerLoad:completion:) syncing mutation for Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: nil, updatedAt: nil)
+submit(mutationEvent:completion:): MutationEvent(id: "6D772FBE-18B6-4684-B9CE-269B3B5414E5", modelId: "A0347AB7-7085-445E-9AEC-9E3152A7B475", modelName: "Test", json: "{\"id\":\"A0347AB7-7085-445E-9AEC-9E3152A7B475\",\"userID\":\"37B7F985-31B2-49E4-B21C-0DA27C7544CB\"}", mutationType: "create", createdAt: Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:25 +0000), version: nil, inProcess: false, graphQLFilterJSON: nil)
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and (
+    "root"."id" = 'Test|A0347AB7-7085-445E-9AEC-9E3152A7B475'
+  )
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and (
+    "root"."id" = 'Test|A0347AB7-7085-445E-9AEC-9E3152A7B475'
+  )
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    (
+      (
+        "root"."modelId" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475'
+        and "root"."modelName" = 'Test'
+      )
+    )
+    and (
+      "root"."inProcess" = 0
+      or "root"."inProcess" is null
+    )
+  )
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    (
+      (
+        "root"."modelId" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475'
+        and "root"."modelName" = 'Test'
+      )
+    )
+    and (
+      "root"."inProcess" = 0
+      or "root"."inProcess" is null
+    )
+  )
+order by "root"."createdAt" asc
+disposition(for:given:) no local events, saving candidate
+resolve(candidate:localEvents:per:storageAdapter:completionPromise:) disposition saveCandidate
+save(mutationEvent:storageAdapter:completionPromise:) mutationEvent: MutationEvent(id: "6D772FBE-18B6-4684-B9CE-269B3B5414E5", modelId: "A0347AB7-7085-445E-9AEC-9E3152A7B475", modelName: "Test", json: "{\"id\":\"A0347AB7-7085-445E-9AEC-9E3152A7B475\",\"userID\":\"37B7F985-31B2-49E4-B21C-0DA27C7544CB\"}", mutationType: "create", createdAt: Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:25 +0000), version: nil, inProcess: false, graphQLFilterJSON: nil)
+select count("id") from "MutationEvent" where "id" = '6D772FBE-18B6-4684-B9CE-269B3B5414E5'
+insert into "MutationEvent" ("id", "createdAt", "graphQLFilterJSON", "inProcess", "json", "modelId", "modelName", "mutationType", "version")
+values ('6D772FBE-18B6-4684-B9CE-269B3B5414E5', '2023-10-04T16:22:25.461Z', NULL, 0, '{"id":"A0347AB7-7085-445E-9AEC-9E3152A7B475","userID":"37B7F985-31B2-49E4-B21C-0DA27C7544CB"}', 'A0347AB7-7085-445E-9AEC-9E3152A7B475', 'Test', 'create', NULL)
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and "root"."id" = '6D772FBE-18B6-4684-B9CE-269B3B5414E5'
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and "root"."id" = '6D772FBE-18B6-4684-B9CE-269B3B5414E5'
+save(mutationEvent:storageAdapter:completionPromise:): saved MutationEvent(id: "6D772FBE-18B6-4684-B9CE-269B3B5414E5", modelId: "A0347AB7-7085-445E-9AEC-9E3152A7B475", modelName: "Test", json: "{\"id\":\"A0347AB7-7085-445E-9AEC-9E3152A7B475\",\"userID\":\"37B7F985-31B2-49E4-B21C-0DA27C7544CB\"}", mutationType: "create", createdAt: Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:25 +0000), version: nil, inProcess: false, graphQLFilterJSON: nil)
+save(mutationEvent:storageAdapter:completionPromise:): invoking completionPromise with success(Amplify.MutationEvent(id: "6D772FBE-18B6-4684-B9CE-269B3B5414E5", modelId: "A0347AB7-7085-445E-9AEC-9E3152A7B475", modelName: "Test", json: "{\"id\":\"A0347AB7-7085-445E-9AEC-9E3152A7B475\",\"userID\":\"37B7F985-31B2-49E4-B21C-0DA27C7544CB\"}", mutationType: "create", createdAt: Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:25 +0000), version: nil, inProcess: false, graphQLFilterJSON: nil))
+syncMutation(of:modelSchema:mutationType:predicate:syncEngine:completion:) successfully submitted Test to sync engine MutationEvent(id: "6D772FBE-18B6-4684-B9CE-269B3B5414E5", modelId: "A0347AB7-7085-445E-9AEC-9E3152A7B475", modelName: "Test", json: "{\"id\":\"A0347AB7-7085-445E-9AEC-9E3152A7B475\",\"userID\":\"37B7F985-31B2-49E4-B21C-0DA27C7544CB\"}", mutationType: "create", createdAt: Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:25 +0000), version: nil, inProcess: false, graphQLFilterJSON: nil)
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'Test|A0347AB7-7085-445E-9AEC-9E3152A7B475'
+limit 1 offset 0
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'Test|A0347AB7-7085-445E-9AEC-9E3152A7B475'
+limit 1 offset 0
+[StarscreamAdapter] viabilityChanged: true
+[StarscreamAdapter] websocketDidConnect: websocket has been connected.
+[RealtimeConnectionProvider] WebsocketDidConnect, sending init message
+[RealtimeConnectionProvider] Starting stale connection timer for 300.0s
+[StarscreamAdapter] socket.write - {"type":"connection_init"}
+[StarscreamAdapter] websocketDidReceiveMessage: - {"type":"connection_ack","payload":{"connectionTimeoutMs":300000}}
+[RealtimeConnectionProvider] Resetting stale connection timer
+[RealtimeConnectionProvider] received connectionAck
+[StarscreamAdapter] websocketDidReceiveMessage: - {"type":"ka"}
+[AppSyncSubscriptionConnection]: Connection connected, start subscription A0114FD6-4D61-4E84-937B-C114BB6A860A.
+[RealtimeConnectionProvider] Resetting stale connection timer
+[AppSyncSubscriptionConnection]: Connection connected, start subscription 65FBF6CE-B382-4FF3-A8D9-086CB6E8DE29.
+[AppSyncSubscriptionConnection]: Connection connected, start subscription 8BE8D31A-A867-4ACC-89A0-4F5DA7EAE4AA.
+[RealtimeConnectionProvider] received keepAlive
+[AppSyncSubscriptionConnection]: Connection connected, start subscription 8EA7A5F3-AAF6-49C1-9985-34CCBA70DE5C.
+[AppSyncSubscriptionConnection]: Connection connected, start subscription 4C177A2F-1BAD-4B45-8C80-9CB6F0DF17C2.
+[AppSyncSubscriptionConnection]: Connection connected, start subscription 1CF891C1-529E-480D-8F57-B6412533A509.
+[StarscreamAdapter] socket.write - {"id":"A0114FD6-4D61-4E84-937B-C114BB6A860A","payload":{"extensions":{"authorization":{"host":"r35ac5k6ffhzrfpocgc2yerwcy.appsync-api.us-east-1.amazonaws.com","x-amz-date":"20231004T162225Z","x-api-key":"da2-enc6rqsu55g35ekqbf6awcbg4i"}},"data":"{\"query\":\"subscription OnDeleteTest {\\n  onDeleteTest {\\n    id\\n    createdAt\\n    test\\n    updatedAt\\n    userID\\n    __typename\\n    _version\\n    _deleted\\n    _lastChangedAt\\n  }\\n}\"}"},"type":"start"}
+[StarscreamAdapter] socket.write - {"id":"65FBF6CE-B382-4FF3-A8D9-086CB6E8DE29","payload":{"extensions":{"authorization":{"x-api-key":"da2-enc6rqsu55g35ekqbf6awcbg4i","host":"r35ac5k6ffhzrfpocgc2yerwcy.appsync-api.us-east-1.amazonaws.com","x-amz-date":"20231004T162225Z"}},"data":"{\"query\":\"subscription OnUpdateUser {\\n  onUpdateUser {\\n    id\\n    createdAt\\n    email\\n    updatedAt\\n    __typename\\n    _version\\n    _deleted\\n    _lastChangedAt\\n  }\\n}\"}"},"type":"start"}
+[StarscreamAdapter] socket.write - {"id":"8BE8D31A-A867-4ACC-89A0-4F5DA7EAE4AA","payload":{"data":"{\"query\":\"subscription OnCreateUser {\\n  onCreateUser {\\n    id\\n    createdAt\\n    email\\n    updatedAt\\n    __typename\\n    _version\\n    _deleted\\n    _lastChangedAt\\n  }\\n}\"}","extensions":{"authorization":{"host":"r35ac5k6ffhzrfpocgc2yerwcy.appsync-api.us-east-1.amazonaws.com","x-amz-date":"20231004T162225Z","x-api-key":"da2-enc6rqsu55g35ekqbf6awcbg4i"}}},"type":"start"}
+[StarscreamAdapter] socket.write - {"id":"8EA7A5F3-AAF6-49C1-9985-34CCBA70DE5C","payload":{"extensions":{"authorization":{"host":"r35ac5k6ffhzrfpocgc2yerwcy.appsync-api.us-east-1.amazonaws.com","x-amz-date":"20231004T162225Z","x-api-key":"da2-enc6rqsu55g35ekqbf6awcbg4i"}},"data":"{\"query\":\"subscription OnUpdateTest {\\n  onUpdateTest {\\n    id\\n    createdAt\\n    test\\n    updatedAt\\n    userID\\n    __typename\\n    _version\\n    _deleted\\n    _lastChangedAt\\n  }\\n}\"}"},"type":"start"}
+[StarscreamAdapter] socket.write - {"id":"4C177A2F-1BAD-4B45-8C80-9CB6F0DF17C2","payload":{"extensions":{"authorization":{"x-api-key":"da2-enc6rqsu55g35ekqbf6awcbg4i","host":"r35ac5k6ffhzrfpocgc2yerwcy.appsync-api.us-east-1.amazonaws.com","x-amz-date":"20231004T162225Z"}},"data":"{\"query\":\"subscription OnCreateTest {\\n  onCreateTest {\\n    id\\n    createdAt\\n    test\\n    updatedAt\\n    userID\\n    __typename\\n    _version\\n    _deleted\\n    _lastChangedAt\\n  }\\n}\"}"},"type":"start"}
+[StarscreamAdapter] socket.write - {"id":"1CF891C1-529E-480D-8F57-B6412533A509","payload":{"data":"{\"query\":\"subscription OnDeleteUser {\\n  onDeleteUser {\\n    id\\n    createdAt\\n    email\\n    updatedAt\\n    __typename\\n    _version\\n    _deleted\\n    _lastChangedAt\\n  }\\n}\"}","extensions":{"authorization":{"host":"r35ac5k6ffhzrfpocgc2yerwcy.appsync-api.us-east-1.amazonaws.com","x-amz-date":"20231004T162225Z","x-api-key":"da2-enc6rqsu55g35ekqbf6awcbg4i"}}},"type":"start"}
+[StarscreamAdapter] websocketDidReceiveMessage: - {"id":"8EA7A5F3-AAF6-49C1-9985-34CCBA70DE5C","type":"start_ack"}
+[RealtimeConnectionProvider] Resetting stale connection timer
+onUpdateValueListener: connection(Amplify.SubscriptionConnectionState.connected)
+[StarscreamAdapter] websocketDidReceiveMessage: - {"id":"A0114FD6-4D61-4E84-937B-C114BB6A860A","type":"start_ack"}
+[RealtimeConnectionProvider] Resetting stale connection timer
+onDeleteValueListener: connection(Amplify.SubscriptionConnectionState.connected)
+[StarscreamAdapter] websocketDidReceiveMessage: - {"id":"65FBF6CE-B382-4FF3-A8D9-086CB6E8DE29","type":"start_ack"}
+[RealtimeConnectionProvider] Resetting stale connection timer
+onUpdateValueListener: connection(Amplify.SubscriptionConnectionState.connected)
+[StarscreamAdapter] websocketDidReceiveMessage: - {"id":"8BE8D31A-A867-4ACC-89A0-4F5DA7EAE4AA","type":"start_ack"}
+[RealtimeConnectionProvider] Resetting stale connection timer
+onCreateValueListener: connection(Amplify.SubscriptionConnectionState.connected)
+[StarscreamAdapter] websocketDidReceiveMessage: - {"id":"1CF891C1-529E-480D-8F57-B6412533A509","type":"start_ack"}
+[RealtimeConnectionProvider] Resetting stale connection timer
+[StarscreamAdapter] websocketDidReceiveMessage: - {"id":"4C177A2F-1BAD-4B45-8C80-9CB6F0DF17C2","type":"start_ack"}
+[RealtimeConnectionProvider] Resetting stale connection timer
+onDeleteValueListener: connection(Amplify.SubscriptionConnectionState.connected)
+onCreateValueListener: connection(Amplify.SubscriptionConnectionState.connected)
+receive(_:): connection(Amplify.SubscriptionConnectionState.connected)
+receive(_:): connection(Amplify.SubscriptionConnectionState.connected)
+dispose(of subscriptionEvent): connection(Amplify.SubscriptionConnectionState.connected)
+dispose(of subscriptionEvent): connection(Amplify.SubscriptionConnectionState.connected)
+connectionState now connected
+connectionState now connected
+[InitializeSubscription.4] .connected User
+[InitializeSubscription.5] 1/2 initialized
+[InitializeSubscription.4] .connected Test
+[InitializeSubscription.5] 2/2 initialized
+[InitializeSubscription.6] connected isInitialized
+[InitializeSubscription.5] RemoteSyncEngine IncomingEventReconciliationQueueEvent.initialized
+[Lifecycle event 1]: subscriptionsEstablished
+Notifying: initializedSubscriptions
+resolve(initializingSubscriptions(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.SQLiteStorageEngineAdapter), initializedSubscriptions) -> performingInitialSync
+New state: performingInitialSync
+respond(to:): performingInitialSync
+[InitializeSubscription.6] performInitialSync()
+Beginning initial sync
+[Lifecycle event 2]: syncQueriesStarted
+Beginning sync for Test
+select
+  "root"."id" as "id", "root"."lastSync" as "lastSync"
+from "ModelSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'Test'
+select
+  "root"."id" as "id", "root"."lastSync" as "lastSync"
+from "ModelSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'Test'
+[09E3D4E5-59D4-4BD1-82C6-226B120F2345] - Try [1/1]
+Starting query BDEDDBA1-D33C-4DF8-A29C-A24DF9B35D32
+{
+  "variables" : {
+    "lastSync" : 1696436512561,
+    "limit" : 1000
+  },
+  "query" : "query SyncTests($lastSync: AWSTimestamp, $limit: Int) {\n  syncTests(lastSync: $lastSync, limit: $limit) {\n    items {\n      id\n      createdAt\n      test\n      updatedAt\n      userID\n      __typename\n      _version\n      _deleted\n      _lastChangedAt\n    }\n    nextToken\n    startedAt\n  }\n}"
+}
+Starting network task for query BDEDDBA1-D33C-4DF8-A29C-A24DF9B35D32
+[Operation 09E3D4E5-59D4-4BD1-82C6-226B120F2345] - Success
+enqueue(_:) skipping reconciliation, no models to enqueue.
+select count("id") from "ModelSyncMetadata" where "id" = 'Test'
+update "ModelSyncMetadata"
+set
+  "lastSync" = 1696436546100
+where "id" = 'Test'
+select
+  "root"."id" as "id", "root"."lastSync" as "lastSync"
+from "ModelSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'Test'
+select
+  "root"."id" as "id", "root"."lastSync" as "lastSync"
+from "ModelSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'Test'
+[Lifecycle event 3]: modelSyncedEvent model: Test
+Beginning sync for User
+[Lifecycle event 3]: modelSyncedReceived progress: 1/2
+select
+  "root"."id" as "id", "root"."lastSync" as "lastSync"
+from "ModelSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'User'
+Emitting DataStore event: modelSyncedEvent ModelSyncedEvent(modelName: "Test", isFullSync: false, isDeltaSync: true, added: 0, updated: 0, deleted: 0)
+select
+  "root"."id" as "id", "root"."lastSync" as "lastSync"
+from "ModelSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'User'
+[F6C231D7-ACF1-4489-85A3-FC01FFD4A676] - Try [1/1]
+Starting query 8AB68EE9-0A25-46F8-AAD3-0829FDDF4BA6
+{
+  "query" : "query SyncUsers($lastSync: AWSTimestamp, $limit: Int) {\n  syncUsers(lastSync: $lastSync, limit: $limit) {\n    items {\n      id\n      createdAt\n      email\n      updatedAt\n      __typename\n      _version\n      _deleted\n      _lastChangedAt\n    }\n    nextToken\n    startedAt\n  }\n}",
+  "variables" : {
+    "limit" : 1000,
+    "lastSync" : 1696436512704
+  }
+}
+Starting network task for query 8AB68EE9-0A25-46F8-AAD3-0829FDDF4BA6
+[Operation F6C231D7-ACF1-4489-85A3-FC01FFD4A676] - Success
+enqueue(_:) skipping reconciliation, no models to enqueue.
+select count("id") from "ModelSyncMetadata" where "id" = 'User'
+update "ModelSyncMetadata"
+set
+  "lastSync" = 1696436546230
+where "id" = 'User'
+select
+  "root"."id" as "id", "root"."lastSync" as "lastSync"
+from "ModelSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'User'
+select
+  "root"."id" as "id", "root"."lastSync" as "lastSync"
+from "ModelSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'User'
+[Lifecycle event 3]: modelSyncedEvent model: User
+Successfully finished sync
+Notifying: performedInitialSync
+[Lifecycle event 3]: modelSyncedReceived progress: 2/2
+resolve(performingInitialSync, performedInitialSync) -> activatingCloudSubscriptions
+Emitting DataStore event: modelSyncedEvent ModelSyncedEvent(modelName: "User", isFullSync: false, isDeltaSync: true, added: 0, updated: 0, deleted: 0)
+New state: activatingCloudSubscriptions
+[Lifecycle event 4]: syncQueriesReady
+respond(to:): activatingCloudSubscriptions
+activateCloudSubscriptions()
+[InitializeSubscription.6] RemoteSyncEngine IncomingEventReconciliationQueueEvent.started
+Notifying: activatedCloudSubscriptions(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))
+resolve(activatingCloudSubscriptions, activatedCloudSubscriptions(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))) -> activatingMutationQueue(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))
+New state: activatingMutationQueue(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))
+respond(to:): activatingMutationQueue(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))
+startMutationQueue(api:mutationEventPublisher:reconciliationQueue:)
+startSyncingToCloud(api:mutationEventPublisher:reconciliationQueue:)
+Notifying: receivedStart(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))
+resolve(stopped, receivedStart(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))) -> starting(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))
+New state: starting(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))
+Notifying: activatedMutationQueue
+respond(to:): starting(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue))
+resolve(activatingMutationQueue(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue)), activatedMutationQueue) -> notifyingSyncStarted
+doStart(api:mutationEventPublisher:reconciliationQueue:)
+New state: notifyingSyncStarted
+respond(to:): notifyingSyncStarted
+[Lifecycle event 5]: syncStarted
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    "root"."inProcess" = 0
+    or "root"."inProcess" is null
+  )
+[Lifecycle event 6]: ready
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    "root"."inProcess" = 0
+    or "root"."inProcess" is null
+  )
+Notifying: notifiedSyncStarted
+resolve(notifyingSyncStarted, notifiedSyncStarted) -> syncEngineActive
+New state: syncEngineActive
+respond(to:): syncEngineActive
+RemoteSyncEngine SyncEngineActive
+receive(subscriber:)
+receive(subscription:)
+Notifying: receivedSubscription
+resolve(starting(<AWSAPIPlugin.AWSAPIPlugin: 0x600003718180>, AWSDataStorePlugin.AWSMutationEventPublisher, Optional(AWSDataStorePlugin.AWSIncomingEventReconciliationQueue)), receivedSubscription) -> requestingEvent
+New state: requestingEvent
+respond(to:): requestingEvent
+requestEvent()
+requestNextEvent()
+getNextMutationEvent(completion:)
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    "root"."inProcess" = 0
+    or "root"."inProcess" is null
+  )
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    "root"."inProcess" = 0
+    or "root"."inProcess" is null
+  )
+order by "root"."createdAt" asc
+select count("id") from "MutationEvent" where "id" = '83304FCA-D53D-423B-8F09-1FD847AAB1EB'
+update "MutationEvent"
+set
+  "createdAt" = '2023-10-04T16:22:25.451Z',
+  "graphQLFilterJSON" = NULL,
+  "inProcess" = 1,
+  "json" = '{"id":"37B7F985-31B2-49E4-B21C-0DA27C7544CB","tests":{"dataStoreAssociatedFields":["userID"],"dataStoreAssociatedIdentifiers":["37B7F985-31B2-49E4-B21C-0DA27C7544CB"]}}',
+  "modelId" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB',
+  "modelName" = 'User',
+  "mutationType" = 'create',
+  "version" = NULL
+where "id" = '83304FCA-D53D-423B-8F09-1FD847AAB1EB'
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and "root"."id" = '83304FCA-D53D-423B-8F09-1FD847AAB1EB'
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and "root"."id" = '83304FCA-D53D-423B-8F09-1FD847AAB1EB'
+receive(_:)
+enqueue(_:)
+Notifying: enqueuedEvent
+resolve(requestingEvent, enqueuedEvent) -> waitingForEventToProcess
+New state: waitingForEventToProcess
+main()
+sendMutationToCloud(withAuthType:)
+sendMutation(describedBy:) sending mutation with sync data: GraphQLRequest<MutationSync<AnyModel>>(apiName: nil, document: "mutation CreateUser($input: CreateUserInput!) {\n  createUser(input: $input) {\n    id\n    createdAt\n    email\n    updatedAt\n    __typename\n    _version\n    _deleted\n    _lastChangedAt\n  }\n}", variables: Optional(["input": ["id": Optional("37B7F985-31B2-49E4-B21C-0DA27C7544CB")]]), responseType: AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>, decodePath: Optional("createUser"), options: Optional(Amplify.GraphQLRequest<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>>.Options(pluginOptions: Optional(AWSPluginsCore.AWSPluginOptions(authType: nil, modelName: Optional("User"))))))
+respond(to:): waitingForEventToProcess
+Starting mutation 9E1D1675-B0E6-4141-8F06-1BED1494D998
+{
+  "query" : "mutation CreateUser($input: CreateUserInput!) {\n  createUser(input: $input) {\n    id\n    createdAt\n    email\n    updatedAt\n    __typename\n    _version\n    _deleted\n    _lastChangedAt\n  }\n}",
+  "variables" : {
+    "input" : {
+      "id" : "37B7F985-31B2-49E4-B21C-0DA27C7544CB"
+    }
+  }
+}
+Starting network task for mutation 9E1D1675-B0E6-4141-8F06-1BED1494D998
+Adding [tests: object(["appSyncAssociatedIdentifiers": Amplify.JSONValue.array([Amplify.JSONValue.string("37B7F985-31B2-49E4-B21C-0DA27C7544CB")]), "appSyncAssociatedFields": Amplify.JSONValue.array([Amplify.JSONValue.string("userID")])])]
+Creating not loaded list of Test with Metadata(appSyncAssociatedIdentifiers: ["37B7F985-31B2-49E4-B21C-0DA27C7544CB"], appSyncAssociatedFields: ["userID"], apiName: nil)
+GraphQL mutation operation received result: success(Swift.Result<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>, Amplify.GraphQLResponseError<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>>>.success(AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", instance: watchOSTestApp_Watch_App.User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "User"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "User|37B7F985-31B2-49E4-B21C-0DA27C7544CB", deleted: false, lastChangedAt: 1696436546368, version: 1))))
+finish(result:)
+[SyncMutationToCloudOperation] mutationEvent finished: 83304FCA-D53D-423B-8F09-1FD847AAB1EB; result: success(Swift.Result<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>, Amplify.GraphQLResponseError<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>>>.success(AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", instance: watchOSTestApp_Watch_App.User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "User"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "User|37B7F985-31B2-49E4-B21C-0DA27C7544CB", deleted: false, lastChangedAt: 1696436546368, version: 1))))
+New state: waiting
+respond(to:): waiting
+main()
+Notifying: started([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", instance: watchOSTestApp_Watch_App.User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "User"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "User|37B7F985-31B2-49E4-B21C-0DA27C7544CB", deleted: false, lastChangedAt: 1696436546368, version: 1))])
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    (
+      (
+        "root"."modelId" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+        and "root"."modelName" = 'User'
+      )
+    )
+    and (
+      "root"."inProcess" = 0
+      or "root"."inProcess" is null
+    )
+  )
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    (
+      (
+        "root"."modelId" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+        and "root"."modelName" = 'User'
+      )
+    )
+    and (
+      "root"."inProcess" = 0
+      or "root"."inProcess" is null
+    )
+  )
+order by "root"."createdAt" asc
+resolve(waiting, started([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", instance: watchOSTestApp_Watch_App.User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "User"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "User|37B7F985-31B2-49E4-B21C-0DA27C7544CB", deleted: false, lastChangedAt: 1696436546368, version: 1))])) -> reconciling([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", instance: watchOSTestApp_Watch_App.User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "User"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "User|37B7F985-31B2-49E4-B21C-0DA27C7544CB", deleted: false, lastChangedAt: 1696436546368, version: 1))])
+New state: reconciling([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", instance: watchOSTestApp_Watch_App.User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "User"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "User|37B7F985-31B2-49E4-B21C-0DA27C7544CB", deleted: false, lastChangedAt: 1696436546368, version: 1))])
+respond(to:): reconciling([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", instance: watchOSTestApp_Watch_App.User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "User"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "User|37B7F985-31B2-49E4-B21C-0DA27C7544CB", deleted: false, lastChangedAt: 1696436546368, version: 1))])
+BEGIN DEFERRED TRANSACTION
+COMMIT TRANSACTION
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    (
+      (
+        "root"."modelId" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+        and "root"."modelName" = 'User'
+      )
+    )
+    and (
+      "root"."inProcess" = 0
+      or "root"."inProcess" is null
+    )
+  )
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    (
+      (
+        "root"."modelId" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+        and "root"."modelName" = 'User'
+      )
+    )
+    and (
+      "root"."inProcess" = 0
+      or "root"."inProcess" is null
+    )
+  )
+order by "root"."createdAt" asc
+BEGIN DEFERRED TRANSACTION
+COMMIT TRANSACTION
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and (
+    "root"."id" = 'User|37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+  )
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and (
+    "root"."id" = 'User|37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+  )
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and "root"."id" = '83304FCA-D53D-423B-8F09-1FD847AAB1EB'
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and "root"."id" = '83304FCA-D53D-423B-8F09-1FD847AAB1EB'
+select count("id") from "User" where "id" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+update "User"
+set
+  "id" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB',
+  "createdAt" = '2023-10-04T16:22:26.340Z',
+  "email" = NULL,
+  "updatedAt" = '2023-10-04T16:22:26.340Z'
+where "id" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."email" as "email",
+  "root"."updatedAt" as "updatedAt"
+from "User" as "root"
+where 1 = 1
+  and "root"."id" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."email" as "email",
+  "root"."updatedAt" as "updatedAt"
+from "User" as "root"
+where 1 = 1
+  and "root"."id" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+[CascadeDelete.1] Deleting MutationEvent with identifiers: ["83304FCA-D53D-423B-8F09-1FD847AAB1EB"]
+select count("id") from "MutationSyncMetadata" where "id" = 'User|37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+delete from "MutationEvent" as root
+where 1 = 1
+  and "root"."id" = '83304FCA-D53D-423B-8F09-1FD847AAB1EB'
+[CascadeDelete.3] Local cascade delete of MutationEvent successful!
+insert into "MutationSyncMetadata" ("id", "deleted", "lastChangedAt", "version")
+values ('User|37B7F985-31B2-49E4-B21C-0DA27C7544CB', 0, 1696436546368, 1)
+[CascadeDelete.4] sending a total of 1 delete mutations
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'MutationEvent|83304FCA-D53D-423B-8F09-1FD847AAB1EB'
+limit 1 offset 0
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'MutationEvent|83304FCA-D53D-423B-8F09-1FD847AAB1EB'
+limit 1 offset 0
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'User|37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'User|37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+mutationEvent deleted successfully
+Notifying: reconciled
+resolve(reconciling([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", instance: watchOSTestApp_Watch_App.User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "User"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "User|37B7F985-31B2-49E4-B21C-0DA27C7544CB", deleted: false, lastChangedAt: 1696436546368, version: 1))]), reconciled) -> finished
+New state: finished
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    "root"."inProcess" = 0
+    or "root"."inProcess" is null
+  )
+respond(to:): finished
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    "root"."inProcess" = 0
+    or "root"."inProcess" is null
+  )
+Notifying: processedEvent
+resolve(waitingForEventToProcess, processedEvent) -> requestingEvent
+New state: requestingEvent
+respond(to:): requestingEvent
+requestEvent()
+requestNextEvent()
+getNextMutationEvent(completion:)
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    "root"."inProcess" = 0
+    or "root"."inProcess" is null
+  )
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    "root"."inProcess" = 0
+    or "root"."inProcess" is null
+  )
+order by "root"."createdAt" asc
+select count("id") from "MutationEvent" where "id" = '6D772FBE-18B6-4684-B9CE-269B3B5414E5'
+update "MutationEvent"
+set
+  "createdAt" = '2023-10-04T16:22:25.461Z',
+  "graphQLFilterJSON" = NULL,
+  "inProcess" = 1,
+  "json" = '{"id":"A0347AB7-7085-445E-9AEC-9E3152A7B475","userID":"37B7F985-31B2-49E4-B21C-0DA27C7544CB"}',
+  "modelId" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475',
+  "modelName" = 'Test',
+  "mutationType" = 'create',
+  "version" = NULL
+where "id" = '6D772FBE-18B6-4684-B9CE-269B3B5414E5'
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and "root"."id" = '6D772FBE-18B6-4684-B9CE-269B3B5414E5'
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and "root"."id" = '6D772FBE-18B6-4684-B9CE-269B3B5414E5'
+receive(_:)
+enqueue(_:)
+Notifying: enqueuedEvent
+main()
+resolve(requestingEvent, enqueuedEvent) -> waitingForEventToProcess
+sendMutationToCloud(withAuthType:)
+New state: waitingForEventToProcess
+sendMutation(describedBy:) sending mutation with sync data: GraphQLRequest<MutationSync<AnyModel>>(apiName: nil, document: "mutation CreateTest($input: CreateTestInput!) {\n  createTest(input: $input) {\n    id\n    createdAt\n    test\n    updatedAt\n    userID\n    __typename\n    _version\n    _deleted\n    _lastChangedAt\n  }\n}", variables: Optional(["input": ["id": Optional("A0347AB7-7085-445E-9AEC-9E3152A7B475"), "userID": Optional("37B7F985-31B2-49E4-B21C-0DA27C7544CB")]]), responseType: AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>, decodePath: Optional("createTest"), options: Optional(Amplify.GraphQLRequest<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>>.Options(pluginOptions: Optional(AWSPluginsCore.AWSPluginOptions(authType: nil, modelName: Optional("Test"))))))
+respond(to:): waitingForEventToProcess
+Starting mutation B32FEE41-02BF-42A9-9AEF-8E7A90E563F2
+{
+  "query" : "mutation CreateTest($input: CreateTestInput!) {\n  createTest(input: $input) {\n    id\n    createdAt\n    test\n    updatedAt\n    userID\n    __typename\n    _version\n    _deleted\n    _lastChangedAt\n  }\n}",
+  "variables" : {
+    "input" : {
+      "id" : "A0347AB7-7085-445E-9AEC-9E3152A7B475",
+      "userID" : "37B7F985-31B2-49E4-B21C-0DA27C7544CB"
+    }
+  }
+}
+Starting network task for mutation B32FEE41-02BF-42A9-9AEF-8E7A90E563F2
+[StarscreamAdapter] websocketDidReceiveMessage: - {"id":"8BE8D31A-A867-4ACC-89A0-4F5DA7EAE4AA","type":"data","payload":{"data":{"onCreateUser":{"id":"37B7F985-31B2-49E4-B21C-0DA27C7544CB","createdAt":"2023-10-04T16:22:26.340Z","email":null,"updatedAt":"2023-10-04T16:22:26.340Z","__typename":"User","_version":1,"_deleted":null,"_lastChangedAt":1696436546368}}}}
+[RealtimeConnectionProvider] Resetting stale connection timer
+Adding [tests: object(["appSyncAssociatedFields": Amplify.JSONValue.array([Amplify.JSONValue.string("userID")]), "appSyncAssociatedIdentifiers": Amplify.JSONValue.array([Amplify.JSONValue.string("37B7F985-31B2-49E4-B21C-0DA27C7544CB")])])]
+Creating not loaded list of Test with Metadata(appSyncAssociatedIdentifiers: ["37B7F985-31B2-49E4-B21C-0DA27C7544CB"], appSyncAssociatedFields: ["userID"], apiName: nil)
+onCreateValueListener: data(Swift.Result<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>, Amplify.GraphQLResponseError<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>>>.success(AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", instance: watchOSTestApp_Watch_App.User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "User"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "User|37B7F985-31B2-49E4-B21C-0DA27C7544CB", deleted: false, lastChangedAt: 1696436546368, version: 1))))
+receive(_:): data(Swift.Result<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>, Amplify.GraphQLResponseError<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>>>.success(AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", instance: watchOSTestApp_Watch_App.User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "User"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "User|37B7F985-31B2-49E4-B21C-0DA27C7544CB", deleted: false, lastChangedAt: 1696436546368, version: 1))))
+dispose(of subscriptionEvent): data(Swift.Result<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>, Amplify.GraphQLResponseError<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>>>.success(AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", instance: watchOSTestApp_Watch_App.User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "User"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "User|37B7F985-31B2-49E4-B21C-0DA27C7544CB", deleted: false, lastChangedAt: 1696436546368, version: 1))))
+dispose(of graphQLResponse): success(AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", instance: watchOSTestApp_Watch_App.User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "User"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "User|37B7F985-31B2-49E4-B21C-0DA27C7544CB", deleted: false, lastChangedAt: 1696436546368, version: 1)))
+New state: waiting
+respond(to:): waiting
+main()
+Notifying: started([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", instance: watchOSTestApp_Watch_App.User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "User"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "User|37B7F985-31B2-49E4-B21C-0DA27C7544CB", deleted: false, lastChangedAt: 1696436546368, version: 1))])
+resolve(waiting, started([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", instance: watchOSTestApp_Watch_App.User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "User"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "User|37B7F985-31B2-49E4-B21C-0DA27C7544CB", deleted: false, lastChangedAt: 1696436546368, version: 1))])) -> reconciling([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", instance: watchOSTestApp_Watch_App.User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "User"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "User|37B7F985-31B2-49E4-B21C-0DA27C7544CB", deleted: false, lastChangedAt: 1696436546368, version: 1))])
+New state: reconciling([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", instance: watchOSTestApp_Watch_App.User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "User"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "User|37B7F985-31B2-49E4-B21C-0DA27C7544CB", deleted: false, lastChangedAt: 1696436546368, version: 1))])
+respond(to:): reconciling([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", instance: watchOSTestApp_Watch_App.User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "User"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "User|37B7F985-31B2-49E4-B21C-0DA27C7544CB", deleted: false, lastChangedAt: 1696436546368, version: 1))])
+BEGIN DEFERRED TRANSACTION
+COMMIT TRANSACTION
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    (
+      (
+        "root"."modelId" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+        and "root"."modelName" = 'User'
+      )
+    )
+    and (
+      "root"."inProcess" = 0
+      or "root"."inProcess" is null
+    )
+  )
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    (
+      (
+        "root"."modelId" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+        and "root"."modelName" = 'User'
+      )
+    )
+    and (
+      "root"."inProcess" = 0
+      or "root"."inProcess" is null
+    )
+  )
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and (
+    "root"."id" = 'User|37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+  )
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and (
+    "root"."id" = 'User|37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+  )
+Notifying: reconciled
+resolve(reconciling([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", instance: watchOSTestApp_Watch_App.User(id: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", email: nil, tests: Optional(Amplify.List<watchOSTestApp_Watch_App.Test>), createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "User"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "User|37B7F985-31B2-49E4-B21C-0DA27C7544CB", deleted: false, lastChangedAt: 1696436546368, version: 1))]), reconciled) -> finished
+New state: finished
+respond(to:): finished
+GraphQL mutation operation received result: success(Swift.Result<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>, Amplify.GraphQLResponseError<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>>>.success(AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", instance: watchOSTestApp_Watch_App.Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "Test"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "Test|A0347AB7-7085-445E-9AEC-9E3152A7B475", deleted: false, lastChangedAt: 1696436546543, version: 1))))
+finish(result:)
+[SyncMutationToCloudOperation] mutationEvent finished: 6D772FBE-18B6-4684-B9CE-269B3B5414E5; result: success(Swift.Result<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>, Amplify.GraphQLResponseError<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>>>.success(AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", instance: watchOSTestApp_Watch_App.Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "Test"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "Test|A0347AB7-7085-445E-9AEC-9E3152A7B475", deleted: false, lastChangedAt: 1696436546543, version: 1))))
+New state: waiting
+respond(to:): waiting
+main()
+Notifying: started([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", instance: watchOSTestApp_Watch_App.Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "Test"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "Test|A0347AB7-7085-445E-9AEC-9E3152A7B475", deleted: false, lastChangedAt: 1696436546543, version: 1))])
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    (
+      (
+        "root"."modelId" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475'
+        and "root"."modelName" = 'Test'
+      )
+    )
+    and (
+      "root"."inProcess" = 0
+      or "root"."inProcess" is null
+    )
+  )
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    (
+      (
+        "root"."modelId" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475'
+        and "root"."modelName" = 'Test'
+      )
+    )
+    and (
+      "root"."inProcess" = 0
+      or "root"."inProcess" is null
+    )
+  )
+order by "root"."createdAt" asc
+resolve(waiting, started([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", instance: watchOSTestApp_Watch_App.Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "Test"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "Test|A0347AB7-7085-445E-9AEC-9E3152A7B475", deleted: false, lastChangedAt: 1696436546543, version: 1))])) -> reconciling([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", instance: watchOSTestApp_Watch_App.Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "Test"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "Test|A0347AB7-7085-445E-9AEC-9E3152A7B475", deleted: false, lastChangedAt: 1696436546543, version: 1))])
+New state: reconciling([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", instance: watchOSTestApp_Watch_App.Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "Test"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "Test|A0347AB7-7085-445E-9AEC-9E3152A7B475", deleted: false, lastChangedAt: 1696436546543, version: 1))])
+BEGIN DEFERRED TRANSACTION
+COMMIT TRANSACTION
+respond(to:): reconciling([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", instance: watchOSTestApp_Watch_App.Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "Test"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "Test|A0347AB7-7085-445E-9AEC-9E3152A7B475", deleted: false, lastChangedAt: 1696436546543, version: 1))])
+BEGIN DEFERRED TRANSACTION
+COMMIT TRANSACTION
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and "root"."id" = '6D772FBE-18B6-4684-B9CE-269B3B5414E5'
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    (
+      (
+        "root"."modelId" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475'
+        and "root"."modelName" = 'Test'
+      )
+    )
+    and (
+      "root"."inProcess" = 0
+      or "root"."inProcess" is null
+    )
+  )
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    (
+      (
+        "root"."modelId" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475'
+        and "root"."modelName" = 'Test'
+      )
+    )
+    and (
+      "root"."inProcess" = 0
+      or "root"."inProcess" is null
+    )
+  )
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and "root"."id" = '6D772FBE-18B6-4684-B9CE-269B3B5414E5'
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and (
+    "root"."id" = 'Test|A0347AB7-7085-445E-9AEC-9E3152A7B475'
+  )
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and (
+    "root"."id" = 'Test|A0347AB7-7085-445E-9AEC-9E3152A7B475'
+  )
+[CascadeDelete.1] Deleting MutationEvent with identifiers: ["6D772FBE-18B6-4684-B9CE-269B3B5414E5"]
+select count("id") from "Test" where "id" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475'
+delete from "MutationEvent" as root
+where 1 = 1
+  and "root"."id" = '6D772FBE-18B6-4684-B9CE-269B3B5414E5'
+[CascadeDelete.3] Local cascade delete of MutationEvent successful!
+update "Test"
+set
+  "id" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475',
+  "createdAt" = '2023-10-04T16:22:26.512Z',
+  "test" = NULL,
+  "updatedAt" = '2023-10-04T16:22:26.512Z',
+  "userID" = '37B7F985-31B2-49E4-B21C-0DA27C7544CB'
+where "id" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475'
+[CascadeDelete.4] sending a total of 1 delete mutations
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'MutationEvent|6D772FBE-18B6-4684-B9CE-269B3B5414E5'
+limit 1 offset 0
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'MutationEvent|6D772FBE-18B6-4684-B9CE-269B3B5414E5'
+limit 1 offset 0
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."test" as "test",
+  "root"."updatedAt" as "updatedAt", "root"."userID" as "userID"
+from "Test" as "root"
+where 1 = 1
+  and "root"."id" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475'
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."test" as "test",
+  "root"."updatedAt" as "updatedAt", "root"."userID" as "userID"
+from "Test" as "root"
+where 1 = 1
+  and "root"."id" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475'
+mutationEvent deleted successfully
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    "root"."inProcess" = 0
+    or "root"."inProcess" is null
+  )
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    "root"."inProcess" = 0
+    or "root"."inProcess" is null
+  )
+select count("id") from "MutationSyncMetadata" where "id" = 'Test|A0347AB7-7085-445E-9AEC-9E3152A7B475'
+Notifying: processedEvent
+resolve(waitingForEventToProcess, processedEvent) -> requestingEvent
+New state: requestingEvent
+insert into "MutationSyncMetadata" ("id", "deleted", "lastChangedAt", "version")
+values ('Test|A0347AB7-7085-445E-9AEC-9E3152A7B475', 0, 1696436546543, 1)
+respond(to:): requestingEvent
+requestEvent()
+requestNextEvent()
+getNextMutationEvent(completion:)
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    "root"."inProcess" = 0
+    or "root"."inProcess" is null
+  )
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    "root"."inProcess" = 0
+    or "root"."inProcess" is null
+  )
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'Test|A0347AB7-7085-445E-9AEC-9E3152A7B475'
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and "root"."id" = 'Test|A0347AB7-7085-445E-9AEC-9E3152A7B475'
+Notifying: reconciled
+resolve(reconciling([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", instance: watchOSTestApp_Watch_App.Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "Test"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "Test|A0347AB7-7085-445E-9AEC-9E3152A7B475", deleted: false, lastChangedAt: 1696436546543, version: 1))]), reconciled) -> finished
+New state: finished
+respond(to:): finished
+[StarscreamAdapter] websocketDidReceiveMessage: - {"id":"4C177A2F-1BAD-4B45-8C80-9CB6F0DF17C2","type":"data","payload":{"data":{"onCreateTest":{"id":"A0347AB7-7085-445E-9AEC-9E3152A7B475","createdAt":"2023-10-04T16:22:26.512Z","test":null,"updatedAt":"2023-10-04T16:22:26.512Z","userID":"37B7F985-31B2-49E4-B21C-0DA27C7544CB","__typename":"Test","_version":1,"_deleted":null,"_lastChangedAt":1696436546543}}}}
+[RealtimeConnectionProvider] Resetting stale connection timer
+onCreateValueListener: data(Swift.Result<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>, Amplify.GraphQLResponseError<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>>>.success(AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", instance: watchOSTestApp_Watch_App.Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "Test"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "Test|A0347AB7-7085-445E-9AEC-9E3152A7B475", deleted: false, lastChangedAt: 1696436546543, version: 1))))
+receive(_:): data(Swift.Result<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>, Amplify.GraphQLResponseError<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>>>.success(AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", instance: watchOSTestApp_Watch_App.Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "Test"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "Test|A0347AB7-7085-445E-9AEC-9E3152A7B475", deleted: false, lastChangedAt: 1696436546543, version: 1))))
+dispose(of subscriptionEvent): data(Swift.Result<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>, Amplify.GraphQLResponseError<AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>>>.success(AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", instance: watchOSTestApp_Watch_App.Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "Test"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "Test|A0347AB7-7085-445E-9AEC-9E3152A7B475", deleted: false, lastChangedAt: 1696436546543, version: 1))))
+dispose(of graphQLResponse): success(AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", instance: watchOSTestApp_Watch_App.Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "Test"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "Test|A0347AB7-7085-445E-9AEC-9E3152A7B475", deleted: false, lastChangedAt: 1696436546543, version: 1)))
+New state: waiting
+respond(to:): waiting
+main()
+Notifying: started([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", instance: watchOSTestApp_Watch_App.Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "Test"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "Test|A0347AB7-7085-445E-9AEC-9E3152A7B475", deleted: false, lastChangedAt: 1696436546543, version: 1))])
+resolve(waiting, started([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", instance: watchOSTestApp_Watch_App.Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "Test"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "Test|A0347AB7-7085-445E-9AEC-9E3152A7B475", deleted: false, lastChangedAt: 1696436546543, version: 1))])) -> reconciling([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", instance: watchOSTestApp_Watch_App.Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "Test"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "Test|A0347AB7-7085-445E-9AEC-9E3152A7B475", deleted: false, lastChangedAt: 1696436546543, version: 1))])
+New state: reconciling([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", instance: watchOSTestApp_Watch_App.Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "Test"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "Test|A0347AB7-7085-445E-9AEC-9E3152A7B475", deleted: false, lastChangedAt: 1696436546543, version: 1))])
+respond(to:): reconciling([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", instance: watchOSTestApp_Watch_App.Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "Test"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "Test|A0347AB7-7085-445E-9AEC-9E3152A7B475", deleted: false, lastChangedAt: 1696436546543, version: 1))])
+BEGIN DEFERRED TRANSACTION
+COMMIT TRANSACTION
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    (
+      (
+        "root"."modelId" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475'
+        and "root"."modelName" = 'Test'
+      )
+    )
+    and (
+      "root"."inProcess" = 0
+      or "root"."inProcess" is null
+    )
+  )
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."createdAt" as "createdAt", "root"."graphQLFilterJSON" as "graphQLFilterJSON",
+  "root"."inProcess" as "inProcess", "root"."json" as "json", "root"."modelId" as "modelId",
+  "root"."modelName" as "modelName", "root"."mutationType" as "mutationType", "root"."version" as "version"
+from "MutationEvent" as "root"
+where 1 = 1
+  and (
+    (
+      (
+        "root"."modelId" = 'A0347AB7-7085-445E-9AEC-9E3152A7B475'
+        and "root"."modelName" = 'Test'
+      )
+    )
+    and (
+      "root"."inProcess" = 0
+      or "root"."inProcess" is null
+    )
+  )
+order by "root"."createdAt" asc
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and (
+    "root"."id" = 'Test|A0347AB7-7085-445E-9AEC-9E3152A7B475'
+  )
+select
+  "root"."id" as "id", "root"."deleted" as "deleted", "root"."lastChangedAt" as "lastChangedAt",
+  "root"."version" as "version"
+from "MutationSyncMetadata" as "root"
+where 1 = 1
+  and (
+    "root"."id" = 'Test|A0347AB7-7085-445E-9AEC-9E3152A7B475'
+  )
+Notifying: reconciled
+resolve(reconciling([AWSPluginsCore.MutationSync<AWSPluginsCore.AnyModel>(model: AWSPluginsCore.AnyModel(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", instance: watchOSTestApp_Watch_App.Test(id: "A0347AB7-7085-445E-9AEC-9E3152A7B475", test: nil, userID: "37B7F985-31B2-49E4-B21C-0DA27C7544CB", createdAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000)), updatedAt: Optional(Amplify.Temporal.DateTime(foundationDate: 2023-10-04 16:22:26 +0000))), modelName: "Test"), syncMetadata: AWSPluginsCore.MutationSyncMetadata(id: "Test|A0347AB7-7085-445E-9AEC-9E3152A7B475", deleted: false, lastChangedAt: 1696436546543, version: 1))]), reconciled) -> finished
+New state: finished
+respond(to:): finished

@@ -1,0 +1,62 @@
+Stopping
+Notifying: finished
+resolve(syncEngineActive, finished) -> cleaningUpForTermination
+New state: cleaningUpForTermination
+respond(to:): cleaningUpForTermination
+Received completion: finished
+[AppSyncSubscriptionConnection] Unsubscribe 77F82A4F-5F0B-4FEE-A98B-F6A555D5E327
+[AppSyncSubscriptionConnection] Unsubscribe 5D72080A-45B6-4988-8927-661777E643F2
+[StarscreamAdapter] socket.write - {"id":"77F82A4F-5F0B-4FEE-A98B-F6A555D5E327","type":"stop"}
+[AppSyncSubscriptionConnection] Unsubscribe 537EC5A1-B0B2-40BD-9F95-E7D0E63DBBBA
+onCreateValueListener: connection(Amplify.SubscriptionConnectionState.disconnected)
+[StarscreamAdapter] socket.write - {"id":"5D72080A-45B6-4988-8927-661777E643F2","type":"stop"}
+[StarscreamAdapter] socket.write - {"id":"537EC5A1-B0B2-40BD-9F95-E7D0E63DBBBA","type":"stop"}
+Received completion: finished
+[AppSyncSubscriptionConnection] Unsubscribe 55D9A936-F184-4EFE-A3B3-8D852429CA80
+[AppSyncSubscriptionConnection] Unsubscribe 494A4DA0-D5CC-4442-82CE-FD7DA5C225AB
+[AppSyncSubscriptionConnection] Unsubscribe 3374F21F-F941-4B9C-81B2-A9EEFB2D0496
+[StarscreamAdapter] socket.write - {"type":"stop","id":"55D9A936-F184-4EFE-A3B3-8D852429CA80"}
+onUpdateValueListener: connection(Amplify.SubscriptionConnectionState.disconnected)
+[RealtimeConnectionProvider] all subscriptions removed, disconnecting websocket connection.
+onDeleteValueListener: connection(Amplify.SubscriptionConnectionState.disconnected)
+[StarscreamAdapter] socket.write - {"id":"494A4DA0-D5CC-4442-82CE-FD7DA5C225AB","type":"stop"}
+[StarscreamAdapter] socket.write - {"id":"3374F21F-F941-4B9C-81B2-A9EEFB2D0496","type":"stop"}
+[StarscreamAdapter] socket.disconnect
+stopSyncingToCloud(_:)
+Notifying: receivedStop((Function))
+resolve(requestingEvent, receivedStop((Function))) -> stopping((Function))
+onCreateValueListener: connection(Amplify.SubscriptionConnectionState.disconnected)
+onUpdateValueListener: connection(Amplify.SubscriptionConnectionState.disconnected)
+New state: stopping((Function))
+onDeleteValueListener: connection(Amplify.SubscriptionConnectionState.disconnected)
+respond(to:): stopping((Function))
+doStop(completion:)
+doStopWithoutNotifyingStateMachine()
+Notifying: doneStopping
+resolve(stopping((Function)), doneStopping) -> stopped
+New state: stopped
+Notifying: cleanedUpForTermination
+resolve(cleaningUpForTermination, cleanedUpForTermination) -> terminate
+New state: terminate
+respond(to:): stopped
+respond(to:): terminate
+RemoteSyncEngine publisher completed successfully
+Notifying: finished
+resolve(terminate, finished) -> cleaningUpForTermination
+New state: cleaningUpForTermination
+respond(to:): cleaningUpForTermination
+stopSyncingToCloud(_:)
+Notifying: receivedStop((Function))
+resolve(stopped, receivedStop((Function))) -> stopping((Function))
+New state: stopping((Function))
+respond(to:): stopping((Function))
+doStop(completion:)
+doStopWithoutNotifyingStateMachine()
+Notifying: doneStopping
+resolve(stopping((Function)), doneStopping) -> stopped
+New state: stopped
+Notifying: cleanedUpForTermination
+resolve(cleaningUpForTermination, cleanedUpForTermination) -> terminate
+New state: terminate
+respond(to:): stopped
+respond(to:): terminate
