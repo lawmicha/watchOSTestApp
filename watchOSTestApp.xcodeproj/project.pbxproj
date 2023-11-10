@@ -84,6 +84,7 @@
 		21511CF82ACDC1CC00AA042E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		21511CF92ACDC1CC00AA042E /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		21511D002ACDC21A00AA042E /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		2165BD092AFE8973007453DF /* watchOSTestApp-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "watchOSTestApp-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +141,7 @@
 		21511CBA2ACDBCF300AA042E /* watchOSTestApp Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				2165BD092AFE8973007453DF /* watchOSTestApp-Watch-App-Info.plist */,
 				21511CFF2ACDC1DB00AA042E /* Models */,
 				21511CBB2ACDBCF300AA042E /* watchOSTestAppApp.swift */,
 				21511CBD2ACDBCF300AA042E /* ContentView.swift */,
@@ -527,6 +529,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"watchOSTestApp Watch App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "watchOSTestApp-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = watchOSTestApp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -556,6 +559,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"watchOSTestApp Watch App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "watchOSTestApp-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = watchOSTestApp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;

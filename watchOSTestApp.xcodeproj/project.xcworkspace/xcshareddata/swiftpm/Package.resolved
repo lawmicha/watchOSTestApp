@@ -6,7 +6,7 @@
       "location" : "https://github.com/aws-amplify/amplify-swift.git",
       "state" : {
         "branch" : "fix-watchos",
-        "revision" : "f2fbe833af4927f22946acf3be34b0cfae1c1072"
+        "revision" : "68b3135182b1854d32452af148789a4e308f711a"
       }
     },
     {
@@ -24,7 +24,7 @@
       "location" : "https://github.com/aws-amplify/aws-appsync-realtime-client-ios.git",
       "state" : {
         "branch" : "fix-watchos",
-        "revision" : "ed49c3bfb89fa14ee54fc181a7a5634bd9ecc0f3"
+        "revision" : "06e97e91fa13583ca6aa008ce641faa9e819a926"
       }
     },
     {
