@@ -8,23 +8,40 @@
 import SwiftUI
 import Amplify
 import AWSPluginsCore
-import AVFAudio
 
+class SaveDeleteViewModel: ObservableObject {
+    
+    var savedId: String?
+    
+    func save() async throws {
+        let user = User()
+        
+        try await Amplify.DataStore.save(user)
+        self.savedId = user.id
+    }
+    
+    func delete() async throws {
+        if let id = savedId {
+            try await Amplify.DataStore.delete(User.self, withId: id)
+        }
+    }
+    
+    func query() async throws {
+        if let id = savedId {
+            let results = try await Amplify.DataStore.query(User.self, byId: id)
+            print("\(results)")
+            
+            let metadata = try await Amplify.DataStore.query(MutationSyncMetadata.self, byId: MutationSyncMetadata.identifier(modelName: User.modelName, modelId: id))
+            print("\(metadata)")
+            
+        }
+    }
+}
 class SubscriptionViewModel: ObservableObject {
     
     var subscription: AmplifyAsyncThrowingSequence<GraphQLSubscriptionEvent<MutationSyncResult>>?
     
-    func sendMutation() {
-        
-        Task {
-            let user = User()
-            let result = try await Amplify.API.mutate(request: .createMutation(of: user))
-            print(result)
-        }
-    }
-
     func createSubscription() {
-        
         subscription = Amplify.API.subscribe(request: .subscription(to: User.self,
                                                                     subscriptionType: .onCreate))
         Task {
@@ -59,7 +76,7 @@ class SubscriptionViewModel: ObservableObject {
 struct ContentView: View {
     
     @ObservedObject var vm: SubscriptionViewModel = SubscriptionViewModel()
-    
+    @ObservedObject var savedDeleteVM: SaveDeleteViewModel = SaveDeleteViewModel()
     var body: some View {
         ScrollView {
     
@@ -79,14 +96,21 @@ struct ContentView: View {
             
             Button("Save") {
                 Task {
-                    print("Saving")
-                    let user = User()
-                    try await Amplify.DataStore.save(user)
-                    let test = Test(userID: user.id)
-                    try await Amplify.DataStore.save(test)
+                    try await savedDeleteVM.save()
                 }
             }
             
+            Button("Delete saved") {
+                Task {
+                    try await savedDeleteVM.delete()
+                }
+            }
+            
+            Button("Query saved") {
+                Task {
+                    try await savedDeleteVM.query()
+                }
+            }
             
             
             Button("Clear") {
@@ -111,27 +135,12 @@ struct ContentView: View {
                     vm.createSubscription()
                 }
             }
-            Button("Send Mutation") {
-                Task {
-                    vm.sendMutation()
-                }
-            }
-            Button("Activate Audio") {
-                do {
-                    try AVAudioSession.sharedInstance().setCategory(.playback, 
-                                                                    mode: .default,
-                                                                    policy: .longFormAudio,
-                                                                    options: [])
-                } catch {
-                    print("AVAudioSession setCategory error: \(error)")
-                }
-
-                AVAudioSession.sharedInstance().activate(options: [], completionHandler: { _, _ in 
-                    // The audio route picket may be displayed before the completionHandler is called.
-                    print("AVAudioSession activated.")
-                })
-            }
             
+            Button("Print DB Path") {
+                // print out DB path
+                print(DataStoreDebugger.dbFilePath)
+                
+            }
         }
         .padding()
     }
@@ -139,4 +148,31 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+}
+import Foundation
+import Amplify
+@testable import AWSDataStorePlugin
+
+struct DataStoreDebugger {
+    
+    static var dbFilePath: URL? { getAdapter()?.dbFilePath }
+    
+    static func getAdapter() -> SQLiteStorageEngineAdapter? {
+        if let dataStorePlugin = tryGetPlugin(),
+           let storageEngine = dataStorePlugin.storageEngine as? StorageEngine,
+           let adapter = storageEngine.storageAdapter as? SQLiteStorageEngineAdapter {
+            return adapter
+        }
+        
+        print("Could not get `SQLiteStorageEngineAdapter` from DataStore")
+        return nil
+    }
+    
+    static func tryGetPlugin() -> AWSDataStorePlugin? {
+        do {
+            return try Amplify.DataStore.getPlugin(for: "awsDataStorePlugin") as? AWSDataStorePlugin
+        } catch {
+            return nil
+        }
+    }
 }

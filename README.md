@@ -80,3 +80,8 @@ This means we need to make sure the files we need for the app is added to the ta
 Generated files are located under `amplify/generated/models`
 
 **amplifyconfiguration.json** located at the root
+
+
+### Debug logs
+
+https://stackoverflow.com/questions/56486733/how-do-i-retrieve-os-log-entries-from-an-apple-watch

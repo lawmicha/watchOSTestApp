@@ -3,9 +3,9 @@
     {
       "identity" : "amplify-swift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/aws-amplify/amplify-swift.git",
+      "location" : "https://github.com/aws-amplify/amplify-swift",
       "state" : {
-        "branch" : "fix-watchos",
+        "branch" : "fix-watchos.no-int-patch",
         "revision" : "68b3135182b1854d32452af148789a4e308f711a"
       }
     },
@@ -24,7 +24,7 @@
       "location" : "https://github.com/aws-amplify/aws-appsync-realtime-client-ios.git",
       "state" : {
         "branch" : "fix-watchos",
-        "revision" : "06e97e91fa13583ca6aa008ce641faa9e819a926"
+        "revision" : "b503056f0b4894a45a2388b379db21e3dc8fb976"
       }
     },
     {

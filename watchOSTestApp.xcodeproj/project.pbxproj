@@ -15,17 +15,34 @@
 		21511CCD2ACDBCF500AA042E /* watchOSTestApp_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CCC2ACDBCF500AA042E /* watchOSTestApp_Watch_AppTests.swift */; };
 		21511CD72ACDBCF500AA042E /* watchOSTestApp_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CD62ACDBCF500AA042E /* watchOSTestApp_Watch_AppUITests.swift */; };
 		21511CD92ACDBCF500AA042E /* watchOSTestApp_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CD82ACDBCF500AA042E /* watchOSTestApp_Watch_AppUITestsLaunchTests.swift */; };
-		21511CEB2ACDC01E00AA042E /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 21511CEA2ACDC01E00AA042E /* AWSAPIPlugin */; };
-		21511CED2ACDC01E00AA042E /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 21511CEC2ACDC01E00AA042E /* AWSCognitoAuthPlugin */; };
-		21511CEF2ACDC01E00AA042E /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 21511CEE2ACDC01E00AA042E /* AWSDataStorePlugin */; };
-		21511CF12ACDC01E00AA042E /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 21511CF02ACDC01E00AA042E /* Amplify */; };
 		21511CFA2ACDC1CC00AA042E /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CF52ACDC1CB00AA042E /* User+Schema.swift */; };
 		21511CFB2ACDC1CC00AA042E /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CF62ACDC1CC00AA042E /* AmplifyModels.swift */; };
 		21511CFC2ACDC1CC00AA042E /* Test+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CF72ACDC1CC00AA042E /* Test+Schema.swift */; };
 		21511CFD2ACDC1CC00AA042E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CF82ACDC1CC00AA042E /* User.swift */; };
 		21511CFE2ACDC1CC00AA042E /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CF92ACDC1CC00AA042E /* Test.swift */; };
-		21511D012ACDC21A00AA042E /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 21511D002ACDC21A00AA042E /* amplifyconfiguration.json */; };
-		21511D022ACDC21A00AA042E /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 21511D002ACDC21A00AA042E /* amplifyconfiguration.json */; };
+		4C3B1BDB2B05127F00F2A14C /* phoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B1BDA2B05127F00F2A14C /* phoneApp.swift */; };
+		4C3B1BDD2B05127F00F2A14C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B1BDC2B05127F00F2A14C /* ContentView.swift */; };
+		4C3B1BDF2B05128100F2A14C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3B1BDE2B05128100F2A14C /* Assets.xcassets */; };
+		4C3B1BE22B05128100F2A14C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3B1BE12B05128100F2A14C /* Preview Assets.xcassets */; };
+		4C3B1BEC2B05128100F2A14C /* phoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B1BEB2B05128100F2A14C /* phoneTests.swift */; };
+		4C3B1BF62B05128100F2A14C /* phoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B1BF52B05128100F2A14C /* phoneUITests.swift */; };
+		4C3B1BF82B05128100F2A14C /* phoneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B1BF72B05128100F2A14C /* phoneUITestsLaunchTests.swift */; };
+		4C3B1C022B05128E00F2A14C /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C7CECC62B03428400F8CD28 /* amplifyconfiguration.json */; };
+		4C3B1C052B0513DF00F2A14C /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4C3B1C042B0513DF00F2A14C /* AWSAPIPlugin */; };
+		4C3B1C072B0513DF00F2A14C /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4C3B1C062B0513DF00F2A14C /* AWSDataStorePlugin */; };
+		4C3B1C092B0513DF00F2A14C /* AWSPluginsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4C3B1C082B0513DF00F2A14C /* AWSPluginsCore */; };
+		4C3B1C0B2B0513DF00F2A14C /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 4C3B1C0A2B0513DF00F2A14C /* Amplify */; };
+		4C3B1C0C2B05152A00F2A14C /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CF62ACDC1CC00AA042E /* AmplifyModels.swift */; };
+		4C3B1C0D2B05152C00F2A14C /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CF92ACDC1CC00AA042E /* Test.swift */; };
+		4C3B1C0E2B05152F00F2A14C /* Test+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CF72ACDC1CC00AA042E /* Test+Schema.swift */; };
+		4C3B1C0F2B05153100F2A14C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CF82ACDC1CC00AA042E /* User.swift */; };
+		4C3B1C102B05153300F2A14C /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21511CF52ACDC1CB00AA042E /* User+Schema.swift */; };
+		4C3B1C132B05154100F2A14C /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 4C3B1C122B05154100F2A14C /* Amplify */; };
+		4C3B1C152B05154100F2A14C /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4C3B1C142B05154100F2A14C /* AWSAPIPlugin */; };
+		4C3B1C172B05154100F2A14C /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4C3B1C162B05154100F2A14C /* AWSDataStorePlugin */; };
+		4C3B1C192B05154100F2A14C /* AWSPluginsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4C3B1C182B05154100F2A14C /* AWSPluginsCore */; };
+		4C7CECC72B03428400F8CD28 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C7CECC62B03428400F8CD28 /* amplifyconfiguration.json */; };
+		4C7CECC82B03428400F8CD28 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C7CECC62B03428400F8CD28 /* amplifyconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +66,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 21511CB52ACDBCF300AA042E;
 			remoteInfo = "watchOSTestApp Watch App";
+		};
+		4C3B1BE82B05128100F2A14C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21511CAA2ACDBCF200AA042E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C3B1BD72B05127F00F2A14C;
+			remoteInfo = phone;
+		};
+		4C3B1BF22B05128100F2A14C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21511CAA2ACDBCF200AA042E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C3B1BD72B05127F00F2A14C;
+			remoteInfo = phone;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -83,8 +114,18 @@
 		21511CF72ACDC1CC00AA042E /* Test+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Test+Schema.swift"; sourceTree = "<group>"; };
 		21511CF82ACDC1CC00AA042E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		21511CF92ACDC1CC00AA042E /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		21511D002ACDC21A00AA042E /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		2165BD092AFE8973007453DF /* watchOSTestApp-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "watchOSTestApp-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		4C3B1BD82B05127F00F2A14C /* phone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3B1BDA2B05127F00F2A14C /* phoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phoneApp.swift; sourceTree = "<group>"; };
+		4C3B1BDC2B05127F00F2A14C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4C3B1BDE2B05128100F2A14C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C3B1BE12B05128100F2A14C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C3B1BE72B05128100F2A14C /* phoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = phoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3B1BEB2B05128100F2A14C /* phoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phoneTests.swift; sourceTree = "<group>"; };
+		4C3B1BF12B05128100F2A14C /* phoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = phoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3B1BF52B05128100F2A14C /* phoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phoneUITests.swift; sourceTree = "<group>"; };
+		4C3B1BF72B05128100F2A14C /* phoneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phoneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4C7CECC62B03428400F8CD28 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +133,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21511CEF2ACDC01E00AA042E /* AWSDataStorePlugin in Frameworks */,
-				21511CF12ACDC01E00AA042E /* Amplify in Frameworks */,
-				21511CEB2ACDC01E00AA042E /* AWSAPIPlugin in Frameworks */,
-				21511CED2ACDC01E00AA042E /* AWSCognitoAuthPlugin in Frameworks */,
+				4C3B1C192B05154100F2A14C /* AWSPluginsCore in Frameworks */,
+				4C3B1C172B05154100F2A14C /* AWSDataStorePlugin in Frameworks */,
+				4C3B1C152B05154100F2A14C /* AWSAPIPlugin in Frameworks */,
+				4C3B1C132B05154100F2A14C /* Amplify in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,17 +154,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4C3B1BD52B05127F00F2A14C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3B1C052B0513DF00F2A14C /* AWSAPIPlugin in Frameworks */,
+				4C3B1C0B2B0513DF00F2A14C /* Amplify in Frameworks */,
+				4C3B1C072B0513DF00F2A14C /* AWSDataStorePlugin in Frameworks */,
+				4C3B1C092B0513DF00F2A14C /* AWSPluginsCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3B1BE42B05128100F2A14C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3B1BEE2B05128100F2A14C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		21511CA92ACDBCF200AA042E = {
 			isa = PBXGroup;
 			children = (
-				21511D002ACDC21A00AA042E /* amplifyconfiguration.json */,
+				4C7CECC62B03428400F8CD28 /* amplifyconfiguration.json */,
 				21511CBA2ACDBCF300AA042E /* watchOSTestApp Watch App */,
 				21511CCB2ACDBCF500AA042E /* watchOSTestApp Watch AppTests */,
 				21511CD52ACDBCF500AA042E /* watchOSTestApp Watch AppUITests */,
+				4C3B1BD92B05127F00F2A14C /* phone */,
+				4C3B1BEA2B05128100F2A14C /* phoneTests */,
+				4C3B1BF42B05128100F2A14C /* phoneUITests */,
 				21511CB12ACDBCF300AA042E /* Products */,
+				4C3B1C112B05154100F2A14C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +204,9 @@
 				21511CB62ACDBCF300AA042E /* watchOSTestApp Watch App.app */,
 				21511CC82ACDBCF500AA042E /* watchOSTestApp Watch AppTests.xctest */,
 				21511CD22ACDBCF500AA042E /* watchOSTestApp Watch AppUITests.xctest */,
+				4C3B1BD82B05127F00F2A14C /* phone.app */,
+				4C3B1BE72B05128100F2A14C /* phoneTests.xctest */,
+				4C3B1BF12B05128100F2A14C /* phoneUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,6 +261,49 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4C3B1BD92B05127F00F2A14C /* phone */ = {
+			isa = PBXGroup;
+			children = (
+				4C3B1BDA2B05127F00F2A14C /* phoneApp.swift */,
+				4C3B1BDC2B05127F00F2A14C /* ContentView.swift */,
+				4C3B1BDE2B05128100F2A14C /* Assets.xcassets */,
+				4C3B1BE02B05128100F2A14C /* Preview Content */,
+			);
+			path = phone;
+			sourceTree = "<group>";
+		};
+		4C3B1BE02B05128100F2A14C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4C3B1BE12B05128100F2A14C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4C3B1BEA2B05128100F2A14C /* phoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C3B1BEB2B05128100F2A14C /* phoneTests.swift */,
+			);
+			path = phoneTests;
+			sourceTree = "<group>";
+		};
+		4C3B1BF42B05128100F2A14C /* phoneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C3B1BF52B05128100F2A14C /* phoneUITests.swift */,
+				4C3B1BF72B05128100F2A14C /* phoneUITestsLaunchTests.swift */,
+			);
+			path = phoneUITests;
+			sourceTree = "<group>";
+		};
+		4C3B1C112B05154100F2A14C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,10 +338,10 @@
 			);
 			name = "watchOSTestApp Watch App";
 			packageProductDependencies = (
-				21511CEA2ACDC01E00AA042E /* AWSAPIPlugin */,
-				21511CEC2ACDC01E00AA042E /* AWSCognitoAuthPlugin */,
-				21511CEE2ACDC01E00AA042E /* AWSDataStorePlugin */,
-				21511CF02ACDC01E00AA042E /* Amplify */,
+				4C3B1C122B05154100F2A14C /* Amplify */,
+				4C3B1C142B05154100F2A14C /* AWSAPIPlugin */,
+				4C3B1C162B05154100F2A14C /* AWSDataStorePlugin */,
+				4C3B1C182B05154100F2A14C /* AWSPluginsCore */,
 			);
 			productName = "watchOSTestApp Watch App";
 			productReference = 21511CB62ACDBCF300AA042E /* watchOSTestApp Watch App.app */;
@@ -267,6 +383,65 @@
 			productReference = 21511CD22ACDBCF500AA042E /* watchOSTestApp Watch AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		4C3B1BD72B05127F00F2A14C /* phone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C3B1BFF2B05128100F2A14C /* Build configuration list for PBXNativeTarget "phone" */;
+			buildPhases = (
+				4C3B1BD42B05127F00F2A14C /* Sources */,
+				4C3B1BD52B05127F00F2A14C /* Frameworks */,
+				4C3B1BD62B05127F00F2A14C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = phone;
+			packageProductDependencies = (
+				4C3B1C042B0513DF00F2A14C /* AWSAPIPlugin */,
+				4C3B1C062B0513DF00F2A14C /* AWSDataStorePlugin */,
+				4C3B1C082B0513DF00F2A14C /* AWSPluginsCore */,
+				4C3B1C0A2B0513DF00F2A14C /* Amplify */,
+			);
+			productName = phone;
+			productReference = 4C3B1BD82B05127F00F2A14C /* phone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C3B1BE62B05128100F2A14C /* phoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C3B1C002B05128100F2A14C /* Build configuration list for PBXNativeTarget "phoneTests" */;
+			buildPhases = (
+				4C3B1BE32B05128100F2A14C /* Sources */,
+				4C3B1BE42B05128100F2A14C /* Frameworks */,
+				4C3B1BE52B05128100F2A14C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C3B1BE92B05128100F2A14C /* PBXTargetDependency */,
+			);
+			name = phoneTests;
+			productName = phoneTests;
+			productReference = 4C3B1BE72B05128100F2A14C /* phoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C3B1BF02B05128100F2A14C /* phoneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C3B1C012B05128100F2A14C /* Build configuration list for PBXNativeTarget "phoneUITests" */;
+			buildPhases = (
+				4C3B1BED2B05128100F2A14C /* Sources */,
+				4C3B1BEE2B05128100F2A14C /* Frameworks */,
+				4C3B1BEF2B05128100F2A14C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C3B1BF32B05128100F2A14C /* PBXTargetDependency */,
+			);
+			name = phoneUITests;
+			productName = phoneUITests;
+			productReference = 4C3B1BF12B05128100F2A14C /* phoneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -291,6 +466,17 @@
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = 21511CB52ACDBCF300AA042E;
 					};
+					4C3B1BD72B05127F00F2A14C = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					4C3B1BE62B05128100F2A14C = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 4C3B1BD72B05127F00F2A14C;
+					};
+					4C3B1BF02B05128100F2A14C = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 4C3B1BD72B05127F00F2A14C;
+					};
 				};
 			};
 			buildConfigurationList = 21511CAD2ACDBCF200AA042E /* Build configuration list for PBXProject "watchOSTestApp" */;
@@ -303,7 +489,7 @@
 			);
 			mainGroup = 21511CA92ACDBCF200AA042E;
 			packageReferences = (
-				21511CE92ACDC01E00AA042E /* XCRemoteSwiftPackageReference "amplify-swift" */,
+				4C3B1C032B0513DF00F2A14C /* XCRemoteSwiftPackageReference "amplify-swift" */,
 			);
 			productRefGroup = 21511CB12ACDBCF300AA042E /* Products */;
 			projectDirPath = "";
@@ -313,6 +499,9 @@
 				21511CB52ACDBCF300AA042E /* watchOSTestApp Watch App */,
 				21511CC72ACDBCF500AA042E /* watchOSTestApp Watch AppTests */,
 				21511CD12ACDBCF500AA042E /* watchOSTestApp Watch AppUITests */,
+				4C3B1BD72B05127F00F2A14C /* phone */,
+				4C3B1BE62B05128100F2A14C /* phoneTests */,
+				4C3B1BF02B05128100F2A14C /* phoneUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -322,7 +511,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21511D012ACDC21A00AA042E /* amplifyconfiguration.json in Resources */,
+				4C7CECC72B03428400F8CD28 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,8 +520,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				21511CC32ACDBCF500AA042E /* Preview Assets.xcassets in Resources */,
-				21511D022ACDC21A00AA042E /* amplifyconfiguration.json in Resources */,
 				21511CC02ACDBCF500AA042E /* Assets.xcassets in Resources */,
+				4C7CECC82B03428400F8CD28 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +533,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		21511CD02ACDBCF500AA042E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3B1BD62B05127F00F2A14C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3B1BE22B05128100F2A14C /* Preview Assets.xcassets in Resources */,
+				4C3B1C022B05128E00F2A14C /* amplifyconfiguration.json in Resources */,
+				4C3B1BDF2B05128100F2A14C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3B1BE52B05128100F2A14C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3B1BEF2B05128100F2A14C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -384,6 +597,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4C3B1BD42B05127F00F2A14C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3B1BDD2B05127F00F2A14C /* ContentView.swift in Sources */,
+				4C3B1C0D2B05152C00F2A14C /* Test.swift in Sources */,
+				4C3B1C0F2B05153100F2A14C /* User.swift in Sources */,
+				4C3B1C102B05153300F2A14C /* User+Schema.swift in Sources */,
+				4C3B1C0E2B05152F00F2A14C /* Test+Schema.swift in Sources */,
+				4C3B1C0C2B05152A00F2A14C /* AmplifyModels.swift in Sources */,
+				4C3B1BDB2B05127F00F2A14C /* phoneApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3B1BE32B05128100F2A14C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3B1BEC2B05128100F2A14C /* phoneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3B1BED2B05128100F2A14C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3B1BF62B05128100F2A14C /* phoneUITests.swift in Sources */,
+				4C3B1BF82B05128100F2A14C /* phoneUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -401,6 +645,16 @@
 			isa = PBXTargetDependency;
 			target = 21511CB52ACDBCF300AA042E /* watchOSTestApp Watch App */;
 			targetProxy = 21511CD32ACDBCF500AA042E /* PBXContainerItemProxy */;
+		};
+		4C3B1BE92B05128100F2A14C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C3B1BD72B05127F00F2A14C /* phone */;
+			targetProxy = 4C3B1BE82B05128100F2A14C /* PBXContainerItemProxy */;
+		};
+		4C3B1BF32B05128100F2A14C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C3B1BD72B05127F00F2A14C /* phone */;
+			targetProxy = 4C3B1BF22B05128100F2A14C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -527,7 +781,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"watchOSTestApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 3XS7A2X6Q6;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "watchOSTestApp-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = watchOSTestApp;
@@ -557,7 +814,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"watchOSTestApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 3XS7A2X6Q6;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "watchOSTestApp-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = watchOSTestApp;
@@ -586,6 +846,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XS7A2X6Q6;
 				INFOPLIST_KEY_CFBundleDisplayName = watchOSTestApp;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lawmicha.watchOSTestApp;
@@ -601,6 +862,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XS7A2X6Q6;
 				INFOPLIST_KEY_CFBundleDisplayName = watchOSTestApp;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lawmicha.watchOSTestApp;
@@ -691,6 +953,153 @@
 			};
 			name = Release;
 		};
+		4C3B1BF92B05128100F2A14C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"phone/Preview Content\"";
+				DEVELOPMENT_TEAM = 3XS7A2X6Q6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawmicha.phone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C3B1BFA2B05128100F2A14C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"phone/Preview Content\"";
+				DEVELOPMENT_TEAM = 3XS7A2X6Q6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawmicha.phone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C3B1BFB2B05128100F2A14C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XS7A2X6Q6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawmicha.phoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/phone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/phone";
+			};
+			name = Debug;
+		};
+		4C3B1BFC2B05128100F2A14C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XS7A2X6Q6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawmicha.phoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/phone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/phone";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C3B1BFD2B05128100F2A14C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XS7A2X6Q6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawmicha.phoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = phone;
+			};
+			name = Debug;
+		};
+		4C3B1BFE2B05128100F2A14C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XS7A2X6Q6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawmicha.phoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = phone;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -739,39 +1148,86 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4C3B1BFF2B05128100F2A14C /* Build configuration list for PBXNativeTarget "phone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3B1BF92B05128100F2A14C /* Debug */,
+				4C3B1BFA2B05128100F2A14C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C3B1C002B05128100F2A14C /* Build configuration list for PBXNativeTarget "phoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3B1BFB2B05128100F2A14C /* Debug */,
+				4C3B1BFC2B05128100F2A14C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C3B1C012B05128100F2A14C /* Build configuration list for PBXNativeTarget "phoneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3B1BFD2B05128100F2A14C /* Debug */,
+				4C3B1BFE2B05128100F2A14C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		21511CE92ACDC01E00AA042E /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+		4C3B1C032B0513DF00F2A14C /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/aws-amplify/amplify-swift.git";
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
 			requirement = {
-				branch = "fix-watchos";
+				branch = "fix-watchos.no-int-patch";
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		21511CEA2ACDC01E00AA042E /* AWSAPIPlugin */ = {
+		4C3B1C042B0513DF00F2A14C /* AWSAPIPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 21511CE92ACDC01E00AA042E /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			package = 4C3B1C032B0513DF00F2A14C /* XCRemoteSwiftPackageReference "amplify-swift" */;
 			productName = AWSAPIPlugin;
 		};
-		21511CEC2ACDC01E00AA042E /* AWSCognitoAuthPlugin */ = {
+		4C3B1C062B0513DF00F2A14C /* AWSDataStorePlugin */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 21511CE92ACDC01E00AA042E /* XCRemoteSwiftPackageReference "amplify-swift" */;
-			productName = AWSCognitoAuthPlugin;
-		};
-		21511CEE2ACDC01E00AA042E /* AWSDataStorePlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 21511CE92ACDC01E00AA042E /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			package = 4C3B1C032B0513DF00F2A14C /* XCRemoteSwiftPackageReference "amplify-swift" */;
 			productName = AWSDataStorePlugin;
 		};
-		21511CF02ACDC01E00AA042E /* Amplify */ = {
+		4C3B1C082B0513DF00F2A14C /* AWSPluginsCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 21511CE92ACDC01E00AA042E /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			package = 4C3B1C032B0513DF00F2A14C /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPluginsCore;
+		};
+		4C3B1C0A2B0513DF00F2A14C /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C3B1C032B0513DF00F2A14C /* XCRemoteSwiftPackageReference "amplify-swift" */;
 			productName = Amplify;
+		};
+		4C3B1C122B05154100F2A14C /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C3B1C032B0513DF00F2A14C /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+		4C3B1C142B05154100F2A14C /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C3B1C032B0513DF00F2A14C /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
+		4C3B1C162B05154100F2A14C /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C3B1C032B0513DF00F2A14C /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSDataStorePlugin;
+		};
+		4C3B1C182B05154100F2A14C /* AWSPluginsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C3B1C032B0513DF00F2A14C /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPluginsCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

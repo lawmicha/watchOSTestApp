@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "30B8537F-6E3E-47E9-A088-DF29A41F1209"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDE77B2E-8DFF-41E1-85E1-49C31669ADAB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Model/Decorator/ConflictResolutionDecorator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "decorate(_:modelSchema:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DDE77B2E-8DFF-41E1-85E1-49C31669ADAB - a01a79ae13267fa3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSPluginsCore.ConflictResolutionDecorator.decorate(_: AWSPluginsCore.SingleDirectiveGraphQLDocument, modelSchema: Amplify.ModelSchema) -&gt; AWSPluginsCore.SingleDirectiveGraphQLDocument"
+                  moduleName = "phone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Model/Decorator/ConflictResolutionDecorator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "1328">
+               </Location>
+               <Location
+                  uuid = "DDE77B2E-8DFF-41E1-85E1-49C31669ADAB - 9dfacbb34c1d38b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSPluginsCore.ConflictResolutionDecorator.decorate(_: AWSPluginsCore.SingleDirectiveGraphQLDocument, modelSchema: Amplify.ModelSchema) -&gt; AWSPluginsCore.SingleDirectiveGraphQLDocument"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Model/Decorator/ConflictResolutionDecorator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "1328">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3880473C-E0C6-4922-8032-74FEBC18102D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Model/Decorator/ConflictResolutionDecorator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "decorate(_:modelSchema:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3880473C-E0C6-4922-8032-74FEBC18102D - 9dfacbb34c1d3813"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSPluginsCore.ConflictResolutionDecorator.decorate(_: AWSPluginsCore.SingleDirectiveGraphQLDocument, modelSchema: Amplify.ModelSchema) -&gt; AWSPluginsCore.SingleDirectiveGraphQLDocument"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Model/Decorator/ConflictResolutionDecorator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "812">
+               </Location>
+               <Location
+                  uuid = "3880473C-E0C6-4922-8032-74FEBC18102D - a01a79ae13267f06"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSPluginsCore.ConflictResolutionDecorator.decorate(_: AWSPluginsCore.SingleDirectiveGraphQLDocument, modelSchema: Amplify.ModelSchema) -&gt; AWSPluginsCore.SingleDirectiveGraphQLDocument"
+                  moduleName = "phone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Model/Decorator/ConflictResolutionDecorator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "812">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3A026452-3747-4D92-A5F4-ECE664B72A91"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Model/Decorator/ConflictResolutionDecorator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "decorate(_:modelSchema:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3A026452-3747-4D92-A5F4-ECE664B72A91 - a01a79ae13267f44"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSPluginsCore.ConflictResolutionDecorator.decorate(_: AWSPluginsCore.SingleDirectiveGraphQLDocument, modelSchema: Amplify.ModelSchema) -&gt; AWSPluginsCore.SingleDirectiveGraphQLDocument"
+                  moduleName = "phone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Model/Decorator/ConflictResolutionDecorator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "736">
+               </Location>
+               <Location
+                  uuid = "3A026452-3747-4D92-A5F4-ECE664B72A91 - 9dfacbb34c1d3851"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSPluginsCore.ConflictResolutionDecorator.decorate(_: AWSPluginsCore.SingleDirectiveGraphQLDocument, modelSchema: Amplify.ModelSchema) -&gt; AWSPluginsCore.SingleDirectiveGraphQLDocument"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Model/Decorator/ConflictResolutionDecorator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "736">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E828DC1B-EE6A-444A-A8F6-7B603B8D6B28"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Sync/MutationSync/MutationSync.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E828DC1B-EE6A-444A-A8F6-7B603B8D6B28 - d9306da2d51c44d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSPluginsCore.MutationSync.init(from: Swift.Decoder) throws -&gt; AWSPluginsCore.MutationSync&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Sync/MutationSync/MutationSync.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "4016">
+               </Location>
+               <Location
+                  uuid = "E828DC1B-EE6A-444A-A8F6-7B603B8D6B28 - e4d0dfbf8a2703cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSPluginsCore.MutationSync.init(from: Swift.Decoder) throws -&gt; AWSPluginsCore.MutationSync&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "phone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Sync/MutationSync/MutationSync.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "4052">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2A6A801-BD3E-4D77-8584-959726893721"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/DataStore/Sources/AWSDataStorePlugin/Storage/SQLite/SQLStatement+Insert.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "stringValue"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "C2A6A801-BD3E-4D77-8584-959726893721 - 41b0a0eb026eb4a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSDataStorePlugin.InsertStatement.stringValue.getter : Swift.String"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/DataStore/Sources/AWSDataStorePlugin/Storage/SQLite/SQLStatement+Insert.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "292">
+               </Location>
+               <Location
+                  uuid = "C2A6A801-BD3E-4D77-8584-959726893721 - 7c5012f65d55f3b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSDataStorePlugin.InsertStatement.stringValue.getter : Swift.String"
+                  moduleName = "phone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/DataStore/Sources/AWSDataStorePlugin/Storage/SQLite/SQLStatement+Insert.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "292">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F6A165E-CE07-4783-BB2B-AD845969D419"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/DataStore/Sources/AWSDataStorePlugin/Storage/SQLite/StorageEngineAdapter+SQLite.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "save(_:modelSchema:condition:eagerLoad:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0F6A165E-CE07-4783-BB2B-AD845969D419 - bdc1bf5a0a8614b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSDataStorePlugin.SQLiteStorageEngineAdapter.save&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Amplify.Model&gt;(_: &#x3c4;_0_0, modelSchema: Amplify.ModelSchema, condition: Swift.Optional&lt;Amplify.QueryPredicate&gt;, eagerLoad: Swift.Bool, completion: (Swift.Result&lt;&#x3c4;_0_0, Amplify.DataStoreError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "phone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/DataStore/Sources/AWSDataStorePlugin/Storage/SQLite/StorageEngineAdapter+SQLite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "165"
+                  endingLineNumber = "165"
+                  offsetFromSymbolStart = "1276">
+               </Location>
+               <Location
+                  uuid = "0F6A165E-CE07-4783-BB2B-AD845969D419 - 80210d4755bd53a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSDataStorePlugin.SQLiteStorageEngineAdapter.save&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Amplify.Model&gt;(_: &#x3c4;_0_0, modelSchema: Amplify.ModelSchema, condition: Swift.Optional&lt;Amplify.QueryPredicate&gt;, eagerLoad: Swift.Bool, completion: (Swift.Result&lt;&#x3c4;_0_0, Amplify.DataStoreError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/DataStore/Sources/AWSDataStorePlugin/Storage/SQLite/StorageEngineAdapter+SQLite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "165"
+                  endingLineNumber = "165"
+                  offsetFromSymbolStart = "1276">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "304A177E-AB60-471F-9BF5-357ED952C998"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/DataStore/Sources/AWSDataStorePlugin/Storage/SQLite/SQLStatement+Insert.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "stringValue"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "304A177E-AB60-471F-9BF5-357ED952C998 - 7c5012f65d55f335"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSDataStorePlugin.InsertStatement.stringValue.getter : Swift.String"
+                  moduleName = "phone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/DataStore/Sources/AWSDataStorePlugin/Storage/SQLite/SQLStatement+Insert.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1120">
+               </Location>
+               <Location
+                  uuid = "304A177E-AB60-471F-9BF5-357ED952C998 - 41b0a0eb026eb420"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSDataStorePlugin.InsertStatement.stringValue.getter : Swift.String"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/DataStore/Sources/AWSDataStorePlugin/Storage/SQLite/SQLStatement+Insert.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1120">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "90DCA0DD-E65B-4AFF-B2F4-653A6148D73C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Sync/MutationSync/MutationSyncMetadata.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "init(id:deleted:lastChangedAt:version:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "90DCA0DD-E65B-4AFF-B2F4-653A6148D73C - 7fae463a6625e837"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSPluginsCore.MutationSyncMetadata.init(id: Swift.String, deleted: Swift.Bool, lastChangedAt: Swift.Int, version: Swift.Int) -&gt; AWSPluginsCore.MutationSyncMetadata"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Sync/MutationSync/MutationSyncMetadata.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "90DCA0DD-E65B-4AFF-B2F4-653A6148D73C - 95e524ac3f6a49d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSPluginsCore.MutationSyncMetadata.init(id: Swift.String, deleted: Swift.Bool, lastChangedAt: Swift.Int64, version: Swift.Int) -&gt; AWSPluginsCore.MutationSyncMetadata"
+                  moduleName = "phone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Sync/MutationSync/MutationSyncMetadata.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "216">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D775800-C870-4A50-9F1E-C7F3A92EBA13"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Sync/MutationSync/MutationSyncMetadata.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "init(modelId:modelName:deleted:lastChangedAt:version:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3D775800-C870-4A50-9F1E-C7F3A92EBA13 - c753e1acc7e4ab0c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSPluginsCore.MutationSyncMetadata.init(modelId: Swift.String, modelName: Swift.String, deleted: Swift.Bool, lastChangedAt: Swift.Int64, version: Swift.Int) -&gt; AWSPluginsCore.MutationSyncMetadata"
+                  moduleName = "phone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Sync/MutationSync/MutationSyncMetadata.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  uuid = "3D775800-C870-4A50-9F1E-C7F3A92EBA13 - 8c530cd7c23fce1e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSPluginsCore.MutationSyncMetadata.init(modelId: Swift.String, modelName: Swift.String, deleted: Swift.Bool, lastChangedAt: Swift.Int, version: Swift.Int) -&gt; AWSPluginsCore.MutationSyncMetadata"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Sync/MutationSync/MutationSyncMetadata.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "260">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2ACBFE68-6781-494B-BEB2-AA738B9CE479"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/DataStore/Sources/AWSDataStorePlugin/Storage/SQLite/ModelValueConverter+SQLite.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "convertToTarget(from:fieldType:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2ACBFE68-6781-494B-BEB2-AA738B9CE479 - fc763bd1c46fca12"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static AWSDataStorePlugin.SQLiteModelValueConverter.convertToTarget(from: Swift.Optional&lt;Any&gt;, fieldType: Amplify.ModelFieldType) throws -&gt; Swift.Optional&lt;SQLite.Binding&gt;"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/DataStore/Sources/AWSDataStorePlugin/Storage/SQLite/ModelValueConverter+SQLite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "3604">
+               </Location>
+               <Location
+                  uuid = "2ACBFE68-6781-494B-BEB2-AA738B9CE479 - c19689cc9b548d07"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static AWSDataStorePlugin.SQLiteModelValueConverter.convertToTarget(from: Swift.Optional&lt;Any&gt;, fieldType: Amplify.ModelFieldType) throws -&gt; Swift.Optional&lt;SQLite.Binding&gt;"
+                  moduleName = "phone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/DataStore/Sources/AWSDataStorePlugin/Storage/SQLite/ModelValueConverter+SQLite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "3592">
+               </Location>
+               <Location
+                  uuid = "2ACBFE68-6781-494B-BEB2-AA738B9CE479 - c19689cc9b548d07"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static AWSDataStorePlugin.SQLiteModelValueConverter.convertToTarget(from: Swift.Optional&lt;Any&gt;, fieldType: Amplify.ModelFieldType) throws -&gt; Swift.Optional&lt;SQLite.Binding&gt;"
+                  moduleName = "phone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/DataStore/Sources/AWSDataStorePlugin/Storage/SQLite/ModelValueConverter+SQLite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "3976">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C28E072A-07A0-4239-89D6-0AF37EAC218B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Sync/MutationSync/MutationSync.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C28E072A-07A0-4239-89D6-0AF37EAC218B - d9306da2d51c4d91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSPluginsCore.MutationSync.init(from: Swift.Decoder) throws -&gt; AWSPluginsCore.MutationSync&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Sync/MutationSync/MutationSync.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "524">
+               </Location>
+               <Location
+                  uuid = "C28E072A-07A0-4239-89D6-0AF37EAC218B - e4d0dfbf8a270a84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSPluginsCore.MutationSync.init(from: Swift.Decoder) throws -&gt; AWSPluginsCore.MutationSync&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "phone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Sync/MutationSync/MutationSync.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "560">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E924596-2C91-48B3-98FF-4A9E09D719DC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Sync/MutationSync/MutationSync.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5E924596-2C91-48B3-98FF-4A9E09D719DC - e4d0dfbf8a270ac6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSPluginsCore.MutationSync.init(from: Swift.Decoder) throws -&gt; AWSPluginsCore.MutationSync&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "phone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Sync/MutationSync/MutationSync.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "656">
+               </Location>
+               <Location
+                  uuid = "5E924596-2C91-48B3-98FF-4A9E09D719DC - d9306da2d51c4dd3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWSPluginsCore.MutationSync.init(from: Swift.Decoder) throws -&gt; AWSPluginsCore.MutationSync&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Library/Developer/Xcode/DerivedData/watchOSTestApp-fqjqwvdeusrpjhciygfsuvcjgbuw/SourcePackages/checkouts/amplify-swift/AmplifyPlugins/Core/AWSPluginsCore/Sync/MutationSync/MutationSync.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "620">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "51972092-5C5D-4929-8A17-639C77D39FB8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "watchOSTestApp Watch App/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "createSubscription()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "51972092-5C5D-4929-8A17-639C77D39FB8 - 2eb52b303c4d9f8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in watchOSTestApp_Watch_App.SubscriptionViewModel.createSubscription() -&gt; ()"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/lawmicha/watchOSTestApp/watchOSTestApp%20Watch%20App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1828">
+               </Location>
+               <Location
+                  uuid = "51972092-5C5D-4929-8A17-639C77D39FB8 - 2eb52b303c4d9f8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in watchOSTestApp_Watch_App.SubscriptionViewModel.createSubscription() -&gt; ()"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/lawmicha/watchOSTestApp/watchOSTestApp%20Watch%20App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "3468">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD488918-E5E2-4E53-8A7A-2D52A64122F0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "watchOSTestApp Watch App/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "createSubscription()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FD488918-E5E2-4E53-8A7A-2D52A64122F0 - 2eb52b303c4d9f21"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in watchOSTestApp_Watch_App.SubscriptionViewModel.createSubscription() -&gt; ()"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/lawmicha/watchOSTestApp/watchOSTestApp%20Watch%20App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1396">
+               </Location>
+               <Location
+                  uuid = "FD488918-E5E2-4E53-8A7A-2D52A64122F0 - 2eb52b303c4d9f21"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in watchOSTestApp_Watch_App.SubscriptionViewModel.createSubscription() -&gt; ()"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/lawmicha/watchOSTestApp/watchOSTestApp%20Watch%20App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "2460">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8045CCA2-EB12-4086-A4C4-7890190CED3E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "watchOSTestApp Watch App/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "createSubscription()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8045CCA2-EB12-4086-A4C4-7890190CED3E - 2eb52b303c4d9ec4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in watchOSTestApp_Watch_App.SubscriptionViewModel.createSubscription() -&gt; ()"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/lawmicha/watchOSTestApp/watchOSTestApp%20Watch%20App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "888">
+               </Location>
+               <Location
+                  uuid = "8045CCA2-EB12-4086-A4C4-7890190CED3E - 2eb52b303c4d9ec4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in watchOSTestApp_Watch_App.SubscriptionViewModel.createSubscription() -&gt; ()"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/lawmicha/watchOSTestApp/watchOSTestApp%20Watch%20App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "920">
+               </Location>
+               <Location
+                  uuid = "8045CCA2-EB12-4086-A4C4-7890190CED3E - 2eb52b303c4d9ec4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in watchOSTestApp_Watch_App.SubscriptionViewModel.createSubscription() -&gt; ()"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/lawmicha/watchOSTestApp/watchOSTestApp%20Watch%20App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "1416">
+               </Location>
+               <Location
+                  uuid = "8045CCA2-EB12-4086-A4C4-7890190CED3E - 2eb52b303c4d9ec4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in watchOSTestApp_Watch_App.SubscriptionViewModel.createSubscription() -&gt; ()"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/lawmicha/watchOSTestApp/watchOSTestApp%20Watch%20App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "1440">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55C6E483-C367-4422-875A-59727CEC8D56"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "watchOSTestApp Watch App/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "createSubscription()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "55C6E483-C367-4422-875A-59727CEC8D56 - 2eb52b303c4d9f8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in watchOSTestApp_Watch_App.SubscriptionViewModel.createSubscription() -&gt; ()"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/lawmicha/watchOSTestApp/watchOSTestApp%20Watch%20App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "3468">
+               </Location>
+               <Location
+                  uuid = "55C6E483-C367-4422-875A-59727CEC8D56 - 2eb52b303c4d9f8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in watchOSTestApp_Watch_App.SubscriptionViewModel.createSubscription() -&gt; ()"
+                  moduleName = "watchOSTestApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/lawmicha/watchOSTestApp/watchOSTestApp%20Watch%20App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1828">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
